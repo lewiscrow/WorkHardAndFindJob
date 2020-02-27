@@ -1,0 +1,2876 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.jianshu.com/p/191d1e21f7ed/ -->
+<html data-blockbyte-bs-uid="97051"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
+  <!-- Start of Baidu Transcode -->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="mobile-agent" content="format=html5;url=https://www.jianshu.com/p/191d1e21f7ed">
+  <!-- End of Baidu Transcode -->
+
+    <meta name="description" content="Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。 相比WYSIWYG编辑器 优点：1、因为是纯文本，所以只要支持Markdown的地方都能获得一样的编辑效果，可以让作者摆脱排版的困扰，专心写作。2、操作简单。比如:WYSIWYG编辑时标记个标题，先选中内容，再点击导航栏的标题按钮，选择几级标题。要三个步骤。而Markdown只需要在标题内容...">
+
+  <meta name="tencent-site-verification" content="39a5ed77a02c0103af6ac08addbc3851">
+  <meta name="360-site-verification" content="604a14b53c6b871206001285921e81d8">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="6ARJIxhZLIgZT7J8MZkENr5mR0-CqshgzYyA3r3jBWU">
+  <meta http-equiv="mobile-agent" content="format=html5; url=https://www.jianshu.com/p/191d1e21f7ed">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-title" content="简书">
+
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/22638973">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="Markdown基本语法" property="twitter:title">
+  <meta content="Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。 相比WYSIWYG编辑器 优点：1、因为是纯文本，所以只要支持Markd..." property="twitter:description">
+  <meta content="https://www.jianshu.com/p/191d1e21f7ed" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="Markdown基本语法">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.jianshu.com/p/191d1e21f7ed">
+  <meta property="og:description" content="Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。 相比WYSIWYG编辑器 优点：1、因为是纯文本，所以只要支持Markdown的地方都能获得...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/22638973">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/22638973">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+
+    <title>Markdown基本语法 - 简书</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="k7W3YGB7f2YGxAko/ZqncVYU1iKdWyLqfv45VBan/RCaVeFJSe283ntUe3NGNH1XDipqUe7SpnzgvPrqU7lzMw==">
+
+  <script src="./Markdown基本语法 - 简书_files/hm.js"></script><script data-ad-client="ca-pub-3077285224019295" async="" src="./Markdown基本语法 - 简书_files/f.txt"></script>
+
+  <link rel="stylesheet" media="all" href="./Markdown基本语法 - 简书_files/web-30728a1164102859481d.css">
+  
+  <link rel="stylesheet" media="all" href="./Markdown基本语法 - 简书_files/entry-aa75deb505b1b600256a.css">
+
+  <link href="https://cdn2.jianshu.io/assets/favicons/favicon-e743bfb1821442341c3ab15bdbe804f7ad97676bd07a770ccc9483473aa76f06.ico" rel="shortcut icon" type="image/x-icon">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/57-a6f1f1ee62ace44f6dc2f6a08575abd3c3b163288881c78dd8d75247682a4b27.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/72-fb9834bcfce738fd7b9c5e31363e79443e09a81a8e931170b58bc815387c1562.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/76-49d88e539ff2489475d603994988d871219141ecaa0b1a7a9a1914f4fe3182d6.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/114-24252fe693524ed3a9d0905e49bff3cbd0228f25a320aa09053c2ebb4955de97.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/120-1bb7371f5e87f93ce780a5f1a05ff1b176828ee0d1d130e768575918a2e05834.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/152-bf209460fc1c17bfd3e2b84c8e758bc11ca3e570fd411c3bbd84149b97453b99.png" sizes="152x152">
+
+  <!-- Start of 访问统计 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?0c0e9d9b1e7d617b3e6842e85b9fb068";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <!-- End of 访问统计 -->
+<style type="text/css">@charset "UTF-8";.image-package .image-container .image-view-error:after,.image-package .image-container .image-view-maintain:after{position:absolute;top:50%;left:50%;width:100%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);color:#888;font-size:14px}.image-package .image-container{position:relative;z-index:2;background-color:#eee;-webkit-transition:background-color .1s linear;-o-transition:background-color .1s linear;transition:background-color .1s linear;margin:0 auto}body.reader-night-mode .image-package .image-container{background-color:#545454}.image-package .image-container-fill{z-index:1}.image-package .image-container .image-view{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden}.image-package .image-container .image-view-error:after{content:"图片获取失败，请点击重试"}.image-package .image-container .image-view-maintain:after{content:"系统维护中，图片暂时无法加载"}.image-package .image-container .image-view img.image-loading{opacity:.3}.image-package .image-container .image-view img{-webkit-transition:all .15s linear;-o-transition:all .15s linear;transition:all .15s linear;z-index:2;opacity:1}</style><style type="text/css">fieldset[disabled] .multiselect {
+  pointer-events: none;
+}
+
+.multiselect__spinner {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 48px;
+  height: 35px;
+  background: #fff;
+  display: block;
+}
+
+.multiselect__spinner:after,
+.multiselect__spinner:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border-color: #41b883 transparent transparent;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 0 0 1px transparent;
+}
+
+.multiselect__spinner:before {
+  animation: a 2.4s cubic-bezier(.41,.26,.2,.62);
+  animation-iteration-count: infinite;
+}
+
+.multiselect__spinner:after {
+  animation: a 2.4s cubic-bezier(.51,.09,.21,.8);
+  animation-iteration-count: infinite;
+}
+
+.multiselect__loading-enter-active,
+.multiselect__loading-leave-active {
+  transition: opacity .4s ease-in-out;
+  opacity: 1;
+}
+
+.multiselect__loading-enter,
+.multiselect__loading-leave-active {
+  opacity: 0;
+}
+
+.multiselect,
+.multiselect__input,
+.multiselect__single {
+  font-family: inherit;
+  font-size: 14px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.multiselect {
+  box-sizing: content-box;
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+  text-align: left;
+  color: #35495e;
+}
+
+.multiselect * {
+  box-sizing: border-box;
+}
+
+.multiselect:focus {
+  outline: none;
+}
+
+.multiselect--disabled {
+  opacity: .6;
+}
+
+.multiselect--active {
+  z-index: 1;
+}
+
+.multiselect--active:not(.multiselect--above) .multiselect__current,
+.multiselect--active:not(.multiselect--above) .multiselect__input,
+.multiselect--active:not(.multiselect--above) .multiselect__tags {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.multiselect--active .multiselect__select {
+  transform: rotate(180deg);
+}
+
+.multiselect--above.multiselect--active .multiselect__current,
+.multiselect--above.multiselect--active .multiselect__input,
+.multiselect--above.multiselect--active .multiselect__tags {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.multiselect__input,
+.multiselect__single {
+  position: relative;
+  display: inline-block;
+  min-height: 20px;
+  line-height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 0 0 5px;
+  width: 100%;
+  transition: border .1s ease;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  vertical-align: top;
+}
+
+.multiselect__tag~.multiselect__input,
+.multiselect__tag~.multiselect__single {
+  width: auto;
+}
+
+.multiselect__input:hover,
+.multiselect__single:hover {
+  border-color: #cfcfcf;
+}
+
+.multiselect__input:focus,
+.multiselect__single:focus {
+  border-color: #a8a8a8;
+  outline: none;
+}
+
+.multiselect__single {
+  padding-left: 6px;
+  margin-bottom: 8px;
+}
+
+.multiselect__tags-wrap {
+  display: inline;
+}
+
+.multiselect__tags {
+  min-height: 40px;
+  display: block;
+  padding: 8px 40px 0 8px;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.multiselect__tag {
+  position: relative;
+  display: inline-block;
+  padding: 4px 26px 4px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #fff;
+  line-height: 1;
+  background: #41b883;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+
+.multiselect__tag-icon {
+  cursor: pointer;
+  margin-left: 7px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-style: normal;
+  width: 22px;
+  text-align: center;
+  line-height: 22px;
+  transition: all .2s ease;
+  border-radius: 5px;
+}
+
+.multiselect__tag-icon:after {
+  content: "\D7";
+  color: #266d4d;
+  font-size: 14px;
+}
+
+.multiselect__tag-icon:focus,
+.multiselect__tag-icon:hover {
+  background: #369a6e;
+}
+
+.multiselect__tag-icon:focus:after,
+.multiselect__tag-icon:hover:after {
+  color: #fff;
+}
+
+.multiselect__current {
+  min-height: 40px;
+  overflow: hidden;
+  padding: 8px 12px 0;
+  padding-right: 30px;
+  white-space: nowrap;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+.multiselect__current,
+.multiselect__select {
+  line-height: 16px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.multiselect__select {
+  position: absolute;
+  width: 40px;
+  height: 38px;
+  right: 1px;
+  top: 1px;
+  padding: 4px 8px;
+  text-align: center;
+  transition: transform .2s ease;
+}
+
+.multiselect__select:before {
+  position: relative;
+  right: 0;
+  top: 65%;
+  color: #999;
+  margin-top: 4px;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  border-color: #999 transparent transparent;
+  content: "";
+}
+
+.multiselect__placeholder {
+  color: #adadad;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-top: 2px;
+}
+
+.multiselect--active .multiselect__placeholder {
+  display: none;
+}
+
+.multiselect__content-wrapper {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 100%;
+  max-height: 240px;
+  overflow: auto;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.multiselect__content {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  vertical-align: top;
+}
+
+.multiselect--above .multiselect__content-wrapper {
+  bottom: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
+  border-top: 1px solid #e8e8e8;
+}
+
+.multiselect__content::webkit-scrollbar {
+  display: none;
+}
+
+.multiselect__element {
+  display: block;
+}
+
+.multiselect__option {
+  display: block;
+  padding: 12px;
+  min-height: 40px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.multiselect__option:after {
+  top: 0;
+  right: 0;
+  position: absolute;
+  line-height: 40px;
+  padding-right: 12px;
+  padding-left: 20px;
+}
+
+.multiselect__option--highlight {
+  background: #41b883;
+  outline: none;
+  color: #fff;
+}
+
+.multiselect__option--highlight:after {
+  content: attr(data-select);
+  background: #41b883;
+  color: #fff;
+}
+
+.multiselect__option--selected {
+  background: #f3f3f3;
+  color: #35495e;
+  font-weight: 700;
+}
+
+.multiselect__option--selected:after {
+  content: attr(data-selected);
+  color: silver;
+}
+
+.multiselect__option--selected.multiselect__option--highlight {
+  background: #ff6a6a;
+  color: #fff;
+}
+
+.multiselect__option--selected.multiselect__option--highlight:after {
+  background: #ff6a6a;
+  content: attr(data-deselect);
+  color: #fff;
+}
+
+.multiselect--disabled {
+  background: #ededed;
+  pointer-events: none;
+}
+
+.multiselect--disabled .multiselect__current,
+.multiselect--disabled .multiselect__select,
+.multiselect__option--disabled {
+  background: #ededed;
+  color: #a6a6a6;
+}
+
+.multiselect__option--disabled {
+  cursor: text;
+  pointer-events: none;
+}
+
+.multiselect__option--disabled.multiselect__option--highlight {
+  background: #dedede!important;
+}
+
+.multiselect-enter-active,
+.multiselect-leave-active {
+  transition: all .15s ease;
+}
+
+.multiselect-enter,
+.multiselect-leave-active {
+  opacity: 0;
+}
+
+.multiselect__strong {
+  margin-bottom: 8px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+[dir=rtl] .multiselect {
+  text-align: right;
+}
+
+[dir=rtl] .multiselect__select {
+  right: auto;
+  left: 1px;
+}
+
+[dir=rtl] .multiselect__tags {
+  padding: 8px 8px 0 40px;
+}
+
+[dir=rtl] .multiselect__content {
+  text-align: right;
+}
+
+[dir=rtl] .multiselect__option:after {
+  right: auto;
+  left: 0;
+}
+
+[dir=rtl] .multiselect__clear {
+  right: auto;
+  left: 12px;
+}
+
+[dir=rtl] .multiselect__spinner {
+  right: auto;
+  left: 1px;
+}
+
+@keyframes a {
+  0% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(2turn);
+  }
+}</style><style type="text/css">
+#free-reward-panel .reward-users-modal main {
+  padding: 0;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.reward-note-modal .v-modal {
+  width: 620px;
+  text-align: center;
+}
+.reward-note-modal .v-modal form {
+    margin: 0 auto 25px auto;
+    padding: 0 40px;
+}
+.reward-note-modal .v-modal .reward-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.reward-note-modal .v-modal .reward-intro .avatar {
+      cursor: default !important;
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      display: inline-block;
+}
+.reward-note-modal .v-modal .reward-intro .intro {
+      margin-right: 5px;
+      font-weight: bold;
+      vertical-align: middle;
+}
+.reward-note-modal .v-modal .reward-intro i {
+      color: #EA6F5A;
+      vertical-align: middle;
+}
+.reward-note-modal .v-modal .main-inputs {
+    margin: 25px 0;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group {
+      margin: 0 -5px;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group input {
+        display: none;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group input:checked + .option {
+        color: #EA6F5A;
+        border-color: #EA6F5A;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .custom-amount:checked + .option .custom-text {
+        opacity: 0;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .custom-amount:checked + .option .custom-amount-input {
+        opacity: 1;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option {
+        position: relative;
+        margin: 0 5px 15px;
+        width: 156px;
+        height: 56px;
+        line-height: 54px;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+        font-weight: normal;
+        color: #999999;
+        cursor: pointer;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option i {
+          font-size: 16px;
+          vertical-align: middle;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .amount {
+          font-size: 28px;
+          vertical-align: middle;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .piece {
+          font-size: 13px;
+          vertical-align: sub;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input {
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          width: 100%;
+          opacity: 0;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input i {
+            position: absolute;
+            top: 0;
+            left: 10px;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input .piece {
+            position: absolute;
+            top: 4px;
+            right: 10px;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input input {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+            height: 54px;
+            line-height: 54px;
+            border: none;
+            font-size: 28px;
+            text-align: center;
+            background: transparent;
+            -moz-appearance: textfield;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input input::-webkit-outer-spin-button, .reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input input::-webkit-inner-spin-button {
+              -webkit-appearance: none !important;
+}
+.reward-note-modal .v-modal .main-inputs .message {
+      padding: 15px 20px;
+      margin-bottom: 0;
+      font-size: 14px;
+      border: 1px solid #E6E6E6;
+      color: #333333;
+      border-radius: 4px;
+      background-color: rgba(180, 180, 180, 0.1);
+}
+.reward-note-modal .v-modal .main-inputs .message textarea {
+        width: 100%;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        resize: none;
+        background: none !important;
+        border: none !important;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+}
+.reward-note-modal .v-modal .main-inputs .message textarea:focus {
+          outline: none;
+}
+.reward-note-modal .v-modal .reward-info .amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #EA6F5A;
+}
+.reward-note-modal .v-modal .reward-info .pay-method {
+    font-size: 14px;
+}
+.reward-note-modal .v-modal .reward-info .pay-method a {
+      color: #3194D0;
+}
+.reward-note-modal .v-modal .choose-pay {
+    margin: 0 -5px;
+}
+.reward-note-modal .v-modal .choose-pay input {
+      display: none;
+}
+.reward-note-modal .v-modal .choose-pay input:checked + .option {
+      color: #EA6F5A;
+      border-color: #EA6F5A;
+}
+.reward-note-modal .v-modal .choose-pay .option {
+      margin: 20px 5px 10px;
+      width: 156px;
+      height: 56px;
+      line-height: 54px;
+      text-align: center;
+      border: 1px solid #E6E6E6;
+      border-radius: 4px;
+      cursor: pointer;
+}
+.reward-note-modal .v-modal .choose-pay .option img {
+        height: 30px;
+}
+.reward-note-modal .v-modal .choose-pay .option img.day.alipay, .reward-note-modal .v-modal .choose-pay .option img.night.alipay {
+        min-width: 85px;
+}
+.reward-note-modal .v-modal .choose-pay .option img.day.wechat, .reward-note-modal .v-modal .choose-pay .option img.night.wechat {
+        min-width: 112px;
+}
+.reward-note-modal .v-modal .choose-pay .option img.night {
+        display: none;
+}
+body.reader-night-mode .reward-note-modal .v-modal .choose-pay .option img.night {
+        display: inline-block;
+}
+body.reader-night-mode .reward-note-modal .v-modal .choose-pay .option img.day {
+        display: none;
+}
+.reward-note-modal .v-modal .choose-pay .tooltip {
+      width: 230px;
+}
+.reward-note-modal .v-modal .modal-footer {
+    padding: 0 15px 20px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+.reward-note-modal .v-modal .modal-footer .btn {
+      padding: 8px 45px;
+      font-size: 24px;
+}
+.reward-note-modal .v-modal .btn-pay {
+    padding: 8px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #F5A623;
+}
+.weixin-pay, .success-pay {
+  text-align: center;
+}
+.weixin-pay .v-modal, .success-pay .v-modal {
+    width: 350px;
+}
+.weixin-pay .ic-successed, .success-pay .ic-successed {
+    font-size: 60px;
+    color: #3db922;
+}
+.weixin-pay h2, .weixin-pay h3, .success-pay h2, .success-pay h3 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+.weixin-pay h2, .success-pay h2 {
+    margin: 0 0 40px 0;
+    font-size: 24px;
+}
+.weixin-pay .bind-text, .success-pay .bind-text {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #999999;
+}
+.weixin-pay .bind-text:before, .weixin-pay .bind-text:after, .success-pay .bind-text:before, .success-pay .bind-text:after {
+      content: "";
+      border-top: 1px solid #999;
+      display: block;
+      position: absolute;
+      width: 40px;
+      top: 8px;
+}
+.weixin-pay .bind-text:before, .success-pay .bind-text:before {
+      left: 30px;
+}
+.weixin-pay .bind-text:after, .success-pay .bind-text:after {
+      right: 30px;
+}
+.weixin-pay .share-bind, .success-pay .share-bind {
+    display: block;
+    margin-bottom: 30px;
+}
+.weixin-pay .share-bind i, .success-pay .share-bind i {
+      margin-right: 4px;
+      font-size: 22px;
+      vertical-align: middle;
+}
+.weixin-pay .share-bind.wechat i, .success-pay .share-bind.wechat i {
+      color: #00BB29;
+}
+.weixin-pay .share-bind.weibo i, .success-pay .share-bind.weibo i {
+      color: #E05244;
+}
+.weixin-pay .wx-qr-code, .success-pay .wx-qr-code {
+    display: inline-block;
+}
+.weixin-pay .wx-qr-code img, .success-pay .wx-qr-code img {
+      margin: 0 auto;
+      padding: 10px;
+      width: 200px;
+      background-color: #ffffff;
+}
+.weixin-pay .pay-amount, .success-pay .pay-amount {
+    margin: 20px 0;
+    color: #787878;
+}
+.weixin-pay .pay-amount span, .success-pay .pay-amount span {
+      color: #F5A623;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.v-modal-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: transparent;
+}
+.v-modal-wrap.modal-leave-active {
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.v-modal-wrap.modal-enter-active .v-modal-mask, .v-modal-wrap.modal-leave-active .v-modal-mask {
+    opacity: 0;
+}
+.v-modal-wrap.modal-enter-active .v-modal, .v-modal-wrap.modal-leave-active .v-modal {
+    -webkit-transform: translate(-50%, -70%);
+        -ms-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+    opacity: 0;
+}
+.v-modal-wrap .v-modal-mask {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+.v-modal-wrap .v-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    opacity: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+}
+.v-modal-wrap .v-modal > header:before, .v-modal-wrap .v-modal > header:after, .v-modal-wrap .v-modal > main:before, .v-modal-wrap .v-modal > main:after, .v-modal-wrap .v-modal > footer:before, .v-modal-wrap .v-modal > footer:after {
+      content: '';
+      clear: both;
+      display: table;
+}
+.v-modal-wrap .v-modal > header {
+      padding: 20px;
+      border-bottom: 1px solid #F0F0F0;
+}
+.v-modal-wrap .v-modal > header h4 {
+        margin: 0;
+        color: #333;
+        text-align: left;
+}
+.v-modal-wrap .v-modal .close {
+      position: absolute;
+      right: 16px;
+      top: 20px;
+      font-size: 26px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.8);
+}
+.v-modal-wrap .v-modal .close:hover {
+        color: #000000;
+}
+.v-modal-wrap .v-modal > main {
+      padding: 20px 20px 20px 20px;
+      font-size: 15px;
+      color: #333;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      overflow-x: hidden;
+      overflow-y: auto;
+}
+.v-modal-wrap .v-modal > footer {
+      padding: 20px;
+      background-color: #fff;
+}
+.v-modal-wrap .v-modal > footer button {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: 0;
+        float: right;
+}
+.v-modal-wrap .v-modal > footer button:focus {
+          outline: 0;
+}
+.v-modal-wrap .v-modal > footer .submit {
+        padding: 4px 12px;
+        border: 1px solid;
+        border-radius: 20px;
+}
+.v-modal-wrap .v-modal > footer .cancel {
+        margin-top: 5px;
+}
+.v-modal-wrap .v-modal > footer .cancel:hover {
+          color: #333333;
+}
+.reader-night-mode .v-modal-wrap .v-modal-mask {
+  background-color: rgba(63, 63, 63, 0.7);
+}
+.reader-night-mode .v-modal-wrap .v-modal {
+  background-color: #3f3f3f;
+}
+.reader-night-mode .v-modal-wrap .v-modal header {
+    border-color: #2F2F2F;
+}
+.reader-night-mode .v-modal-wrap .v-modal header h4 {
+      color: #C8C8C8;
+}
+.reader-night-mode .v-modal-wrap .v-modal .close {
+    color: #C8C8C8;
+}
+.reader-night-mode .v-modal-wrap .v-modal .close:hover {
+      color: #ffffff;
+}
+.reader-night-mode .v-modal-wrap .v-modal main {
+    color: #C8C8C8;
+}
+.reader-night-mode .v-modal-wrap .v-modal footer {
+    background-color: #3f3f3f;
+}
+.reader-night-mode .v-modal-wrap .v-modal footer .cancel:hover {
+      color: #C8C8C8;
+}
+</style><style type="text/css">.style-mode{float:right}</style><style type="text/css">
+.nqzzJ71pC-jOnJKAfdtr6_0 {
+  float: right;
+  height: 55px;
+  padding: 15px 0px;
+  margin: 0 12px;
+}
+._3tScN0zmSdGLaUAH4SxTbM_0 {
+    width: 100%;
+    height: 100%;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._3f806byixOPpOPWnx8HiQP_0 {
+    height: 25px;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._2MIQ6sBppQZAKea91We0qf_0 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 1000;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._1RppgOJ_CQiXgzd3ke-sbJ_0 {
+    position: fixed;
+    left: -webkit-calc( 50% - 190px);
+    left: calc( 50% - 190px);
+    top: -webkit-calc( 50% - 300px);
+    top: calc( 50% - 300px);
+    width: 380px;
+    height: 425px;
+    background-color: #fff;
+    padding: 40px 72px 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1000;
+    text-align: center;
+}
+body.reader-night-mode .nqzzJ71pC-jOnJKAfdtr6_0 ._1RppgOJ_CQiXgzd3ke-sbJ_0 {
+      background-color: #3f3f3f;
+      color: #c8c8c8;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._1RppgOJ_CQiXgzd3ke-sbJ_0 h4 {
+      margin: 0;
+      line-height: 25px;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._1RppgOJ_CQiXgzd3ke-sbJ_0 h4 span {
+        color: #e9634c;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._1RppgOJ_CQiXgzd3ke-sbJ_0 img {
+      width: 190px;
+      height: 190px;
+      margin: 12px 0 8px 0;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._1RppgOJ_CQiXgzd3ke-sbJ_0 p {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+}
+.nqzzJ71pC-jOnJKAfdtr6_0 ._1RppgOJ_CQiXgzd3ke-sbJ_0 ._2WUz9DZJO5DIC_O5sD1kac_0 {
+      background-color: #e9634c;
+      color: #fff;
+      margin: 25px auto 0;
+      width: 190px;
+      height: 40px;
+      border-radius: 20px;
+      line-height: 40px;
+      font-size: 14px;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.youdao-fixed-ad {
+  display: block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #e8eae9;
+}
+.youdao-fixed-ad .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.youdao-fixed-ad .ad-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    font-size: 12px;
+    padding: 2px 5px 0 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
+.qingteng-ads {
+  border: 1px solid #e8e8e8;
+  width: 180px;
+}
+</style><style type="text/css">
+.yuxi-fixed-ad {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+.yuxi-fixed-ad .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(//cdn2.jianshu.io/assets/web/yuxi-ads-d73b364baf42dfeca32d518c819a0136.jpg);
+}
+.yuxi-fixed-ad .ad-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    font-size: 12px;
+    padding: 2px 5px 0 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.like[data-v-6ddd02c6] {
+  display: inline-block;
+}
+.like .like-group[data-v-6ddd02c6] {
+    position: relative;
+    padding: 13px 0 15px 0;
+    font-size: 0;
+    border: 1px solid #EA6F5A;
+    border-radius: 40px;
+}
+.like .like-group[data-v-6ddd02c6]:hover {
+      background-color: rgba(236, 97, 73, 0.05);
+}
+.like .like-group .btn-like[data-v-6ddd02c6] {
+      display: inline-block;
+      font-size: 19px;
+}
+.like .like-group .btn-like[data-v-6ddd02c6]:before {
+        content: '';
+        position: absolute;
+        left: 12px;
+        top: 2px;
+        width: 50px;
+        height: 50px;
+        background-image: url(//cdn2.jianshu.io/assets/web/like_animation_steps-62a00a7b52377d3069927cdb8e61fd34.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 1000px 50px;
+}
+.like .like-group .btn-like a[data-v-6ddd02c6] {
+        position: relative;
+        padding: 18px 30px 18px 55px;
+        color: #EA6F5A;
+}
+.like .like-group .modal-wrap[data-v-6ddd02c6] {
+      font-size: 18px;
+      border-left: 1px solid rgba(236, 97, 73, 0.4);
+      display: inline-block;
+      margin-left: -15px;
+}
+.like .like-group .modal-wrap a[data-v-6ddd02c6] {
+        color: #EA6F5A;
+        padding: 18px 26px 18px 18px;
+}
+.like .like-group.like-animation[data-v-6ddd02c6], .like .like-group.active[data-v-6ddd02c6] {
+      background-color: #EA6F5A;
+}
+.like .like-group.like-animation .btn-like a[data-v-6ddd02c6], .like .like-group.active .btn-like a[data-v-6ddd02c6] {
+        color: white;
+}
+.like .like-group.like-animation .modal-wrap[data-v-6ddd02c6], .like .like-group.active .modal-wrap[data-v-6ddd02c6] {
+        border-left: 1px solid white;
+}
+.like .like-group.like-animation .modal-wrap a[data-v-6ddd02c6], .like .like-group.active .modal-wrap a[data-v-6ddd02c6] {
+          color: white;
+}
+.like .like-group.like-animation .btn-like[data-v-6ddd02c6]:before {
+      -webkit-animation: likeBlast-data-v-6ddd02c6 0.6s 1 steps(19);
+              animation: likeBlast-data-v-6ddd02c6 0.6s 1 steps(19);
+      background-position: right;
+}
+@-webkit-keyframes likeBlast {
+0% {
+    background-position: left;
+}
+100% {
+    background-position: right;
+}
+}
+@keyframes likeBlast-data-v-6ddd02c6 {
+0% {
+    background-position: left;
+}
+100% {
+    background-position: right;
+}
+}
+.like .like-group.active .btn-like[data-v-6ddd02c6]:before {
+      background-position: right;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+  width: 620px;
+}
+.main .title {
+    padding-left: 8px;
+    border-left: 3px solid #EA6F5A;
+    line-height: 1;
+    font-size: 15px;
+}
+.main .collection-settings {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 13px;
+    color: #A0A0A0;
+}
+.main .collection-settings span {
+      padding-left: 4px;
+}
+.main .include-collection {
+    width: 100%;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.main .include-collection .item {
+      display: inline-block;
+      margin: 0 12px 12px 0;
+      min-height: 32px;
+      background-color: white;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px;
+      vertical-align: top;
+      overflow: hidden;
+}
+.main .include-collection .item img {
+        width: 32px;
+        height: 32px;
+}
+.main .include-collection .item .name {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 14px;
+}
+.main .include-collection .add-collection-wrap {
+      margin: 0 12px 12px 0;
+}
+.main .include-collection .add-collection {
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px;
+}
+.main .include-collection .add-collection i {
+        margin-right: 4px;
+        color: #969696;
+}
+.main .recommend-note a {
+    position: relative;
+    margin: 20px 2px 0 0;
+    width: 200px;
+    height: 160px;
+    display: inline-block;
+}
+.main .recommend-note a:after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 160px;
+      border-radius: 0 0 4px 4px;
+      -webkit-box-shadow: inset 0px -80px 50px -22px rgba(0, 0, 0, 0.6);
+              box-shadow: inset 0px -80px 50px -22px rgba(0, 0, 0, 0.6);
+      top: 0;
+      left: 0;
+      z-index: 1;
+}
+.main .recommend-note .name {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    right: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+}
+.main .recommend-note .author {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+}
+.main .recommend-note .avatar {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.main .recommend-note .avatar img {
+      border-radius: 50%;
+}
+.main .recommend-note .author-name {
+    font-size: 12px;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: -1px;
+}
+.main .show-more {
+    margin: 0 12px 12px 0;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+</style><style class="blockbyte-bs-style" data-name="content">body>div#blockbyte-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible,body>iframe#blockbyte-bs-overlay.blockbyte-bs-visible{opacity:1;pointer-events:auto}body.blockbyte-bs-noscroll{overflow:hidden !important}body>div#blockbyte-bs-indicator>div{position:absolute;transform:translate3d(-40px, 0, 0);top:0;left:0;width:40px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#blockbyte-bs-indicator>div>span{-webkit-mask:no-repeat center/32px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#blockbyte-bs-indicator[data-pos='right']{left:auto;right:0}body>div#blockbyte-bs-indicator[data-pos='right']>div{transform:translate3d(40px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#blockbyte-bs-indicator.blockbyte-bs-fullHeight>div{border-radius:0}body>div#blockbyte-bs-indicator.blockbyte-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb{height:100% !important;top:0 !important}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div{background:transparent}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#blockbyte-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(0,0,0,0.6) !important;border:none;display:block !important;transform:translate3d(-350px, 0, 0);will-change:width, height, opacity, transform;transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask{background:none !important}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask:not(.blockbyte-bs-hover){width:calc(350px + 50px)}body>iframe#blockbyte-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style><style type="text/css">
+#featured-comment-list {
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.pc-bind-phone-modal .modal-content, .pc-bind-phone-modal .modal-body {
+  overflow: visible;
+}
+.pc-bind-phone-modal .modal-body {
+  padding-top: 14px;
+}
+.pc-bind-phone-modal .dropdown-menu {
+  max-height: 300px;
+  overflow: auto;
+}
+.pc-bind-phone-modal .dropdown-menu .tag {
+    background-color: #efefef;
+    color: #4A4A4A;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.pc-bind-phone-modal .tips {
+  color: #999999;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+.pc-bind-phone-modal .tips a {
+    color: #3194D0;
+}
+.reader-night-mode .pc-bind-phone-modal .dropdown-menu .tag {
+  background-color: #2F2F2F;
+  color: #999999;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.recommend-note {
+  margin-bottom: 20px;
+}
+.recommend-note .meta, .recommend-note .list {
+    width: 620px;
+    margin: 0 auto;
+}
+.recommend-note .meta .title {
+    padding-left: 8px;
+    border-left: 3px solid #EA6F5A;
+    line-height: 1;
+    font-size: 15px;
+}
+.recommend-note .meta .title .more {
+      float: right;
+      font-size: 14px;
+      color: #A0A0A0;
+}
+.recommend-note .list {
+    margin-top: 20px;
+}
+.recommend-note .list .note {
+      display: block;
+      margin-bottom: 25px;
+      padding: 0 0 25px 0;
+      border-bottom: 1px solid #DDDDDD;
+}
+.recommend-note .list .note.have-img {
+        min-height: 136px;
+}
+.recommend-note .list .note.have-img.no-user .description {
+          -webkit-line-clamp: 3;
+}
+.recommend-note .list .note .cover {
+        float: right;
+        margin: -5px 0 0 15px;
+        width: 150px;
+        height: 120px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+}
+.recommend-note .list .note .title {
+        display: inherit;
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: bold;
+        color: #333333;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        white-space: nowrap;
+}
+.recommend-note .list .note .title:hover {
+          text-decoration: underline;
+}
+.recommend-note .list .note .title:visited {
+          color: #999999;
+}
+.recommend-note .list .note .description {
+        margin-bottom: 12px;
+        font-size: 13px;
+        line-height: 23px;
+        color: #333333;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+}
+.recommend-note .list .note .author .avatar {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 3px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: middle;
+}
+.recommend-note .list .note .author .name {
+        font-size: 13px;
+        color: #333333;
+        vertical-align: middle;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.comment-images {
+  display: block;
+  width: 338px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 0;
+}
+.comment-images .preview-img {
+    display: block;
+}
+.comment-images .image {
+    position: relative;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+body.reader-night-mode .comment-images .image {
+      border-color: #2f2f2f;
+}
+.comment-images .image:not(:nth-child(3n)) {
+      margin-right: 4px;
+}
+.comment-images .image:nth-child(n + 4) {
+      margin-top: 4px;
+}
+.comment-images .image.is-long:after {
+      content: '\957F\56FE';
+      position: absolute;
+      bottom: 0;
+      margin-left: -32px;
+      width: 32px;
+      height: 28px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 28px;
+      background-color: #2f2f2f;
+      opacity: 0.5;
+      color: #fff;
+}
+.comment-images .one-image.is-long {
+    width: 110px;
+    height: 220px;
+    background-position: top left;
+    background-size: 110px auto;
+}
+.comment-images .one-image.is-long:after {
+      left: 100%;
+}
+.comment-images .one-image.is-normal {
+    height: 110px;
+    width: 100%;
+    background-size: contain;
+    background-position: center left;
+}
+.comment-images .many-image {
+    background-size: cover;
+    display: inline-block !important;
+    height: 110px;
+    width: 110px;
+}
+.comment-images .many-image:after {
+      left: 100%;
+}
+.comment-images .sub-image {
+    width: 105px;
+    height: 105px;
+}
+.comment-images .collapsed-btn {
+    display: block;
+    color: #3194d0;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.comment-images .mask {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 32%;
+    border-radius: 2px;
+    background-color: rgba(47, 47, 47, 0.6);
+    overflow: hidden;
+    pointer-events: none;
+}
+.comment-images .mask span {
+      font-size: 15px;
+      color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.tips-card-loading[data-v-f3bf5228], .tips-card[data-v-f3bf5228] {
+  width: 460px;
+  position: relative;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d9d9d9;
+}
+.tips-card-loading[data-v-f3bf5228] {
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.tips-card-loading div[data-v-f3bf5228] {
+    background-color: #EAEAEA;
+}
+.tips-card-loading .avatar[data-v-f3bf5228] {
+    width: 72px !important;
+    height: 72px !important;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.tips-card-loading .name[data-v-f3bf5228] {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    left: 110px;
+    top: 31px;
+}
+.tips-card-loading .content[data-v-f3bf5228] {
+    position: absolute;
+    left: 110px;
+    top: 62px;
+    width: 238px;
+    height: 39.2px;
+    background-color: transparent;
+}
+.tips-card-loading .content .text[data-v-f3bf5228], .tips-card-loading .content .text-delay[data-v-f3bf5228] {
+      height: 14px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+}
+.tips-card-loading .content .text[data-v-f3bf5228] {
+      top: 2px;
+      -webkit-animation: loading-data-v-f3bf5228 1s ease-in-out infinite;
+      animation: loading-data-v-f3bf5228 1s ease-in-out infinite;
+}
+.tips-card-loading .content .text-delay[data-v-f3bf5228] {
+      bottom: 3px;
+      -webkit-animation: loading-data-v-f3bf5228 1s ease-in-out -0.5s infinite;
+      animation: loading-data-v-f3bf5228 1s ease-in-out -0.5s infinite;
+}
+@keyframes loading-data-v-f3bf5228 {
+0% {
+    width: 60%;
+}
+50% {
+    width: 100%;
+}
+100% {
+    width: 60%;
+}
+}
+@-webkit-keyframes loading {
+0% {
+    width: 60%;
+}
+50% {
+    width: 100%;
+}
+100% {
+    width: 60%;
+}
+}
+.tips-card-loading .meta[data-v-f3bf5228] {
+    width: 30px;
+    height: 42px;
+    position: absolute;
+    bottom: 20px;
+    background-color: transparent;
+}
+.tips-card-loading .meta.meta-1[data-v-f3bf5228] {
+      left: 30px;
+}
+.tips-card-loading .meta.meta-2[data-v-f3bf5228] {
+      left: 90px;
+}
+.tips-card-loading .meta.meta-3[data-v-f3bf5228] {
+      left: 150px;
+}
+.tips-card-loading .meta .count[data-v-f3bf5228], .tips-card-loading .meta .type[data-v-f3bf5228] {
+      position: absolute;
+}
+.tips-card-loading .meta .count[data-v-f3bf5228] {
+      left: -5px;
+      top: 6px;
+      height: 18px;
+      width: 40px;
+}
+.tips-card-loading .meta .type[data-v-f3bf5228] {
+      left: 1px;
+      bottom: 2px;
+      height: 13px;
+      width: 28px;
+}
+.tips-card-loading .button[data-v-f3bf5228] {
+    position: absolute;
+    bottom: 17px;
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+}
+.tips-card-loading .message[data-v-f3bf5228] {
+    right: 120px;
+}
+.tips-card-loading .follow[data-v-f3bf5228] {
+    right: 17px;
+}
+.tips-card[data-v-f3bf5228] {
+  z-index: 10;
+}
+.tips-card .card-content[data-v-f3bf5228] {
+    padding: 20px 20px 0 20px;
+}
+.tips-card .card-content .summary[data-v-f3bf5228] {
+      padding: 8px 0 20px 90px;
+      min-height: 92px;
+      position: relative;
+}
+.tips-card .card-content .summary .avatar[data-v-f3bf5228] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 72px;
+        height: 72px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #EAEAEA;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.tips-card .card-content .summary .name[data-v-f3bf5228] {
+        height: 26px;
+        margin-right: 3px;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+}
+.tips-card .card-content .summary .name .nickname[data-v-f3bf5228] {
+          color: #333333;
+          font-size: 19px;
+          font-weight: bold;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+             text-overflow: ellipsis;
+          white-space: nowrap;
+          cursor: pointer;
+}
+.tips-card .card-content .summary .name .sex[data-v-f3bf5228], .tips-card .card-content .summary .name .badge[data-v-f3bf5228] {
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+          display: inline-block;
+}
+.tips-card .card-content .summary .name .sex[data-v-f3bf5228] {
+          font-size: 19px;
+          width: 19px;
+          margin: 0 4px;
+}
+.tips-card .card-content .summary .intro[data-v-f3bf5228] {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333333;
+}
+.tips-card .card-content .summary .intro.block[data-v-f3bf5228] {
+          color: #999999;
+}
+.tips-card .card-content .summary .list .item[data-v-f3bf5228] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 13px;
+        color: #999999;
+        cursor: pointer;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        white-space: nowrap;
+}
+.tips-card .card-content .summary .list .item i[data-v-f3bf5228] {
+          margin-right: 2px;
+}
+.tips-card .card-footer[data-v-f3bf5228] {
+    border-top: 1px solid #F0F0F0;
+    padding: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    _zoom: 1;
+}
+.tips-card .card-footer .profile[data-v-f3bf5228] {
+      width: 198px;
+      overflow: hidden;
+      _zoom: 1;
+      float: left;
+}
+.tips-card .card-footer .profile div[data-v-f3bf5228] {
+        float: left;
+        width: 60px;
+        height: 44px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+}
+.tips-card .card-footer .profile div span[data-v-f3bf5228] {
+          display: block;
+          width: 100%;
+          text-align: center;
+}
+.tips-card .card-footer .profile div .type[data-v-f3bf5228] {
+          font-size: 13px;
+          color: #999999;
+}
+.tips-card .card-footer .profile div .count[data-v-f3bf5228] {
+          font-size: 18px;
+          color: #333333;
+}
+.tips-card .card-footer .social[data-v-f3bf5228] {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      float: right;
+      overflow: hidden;
+      _zoom: 1;
+}
+.tips-card .card-footer .social .message[data-v-f3bf5228] {
+        border: 1px solid rgba(59, 194, 29, 0.7);
+        color: #42C02E;
+        margin: 0 10px 0 16px;
+        font-size: 15px;
+        padding: 8px 0;
+        width: 90px;
+        border-radius: 40px;
+        text-align: center;
+        cursor: pointer;
+        float: left;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+}
+.tips-card .card-footer .social .message[data-v-f3bf5228]:hover {
+          border: 1px solid #42C02E;
+          color: #42C02E;
+          background-color: rgba(59, 194, 29, 0.05);
+}
+.tips-card .card-footer .social .user-follow-button[data-v-f3bf5228] {
+        font-size: 15px;
+        padding: 8px 0;
+        width: 100px;
+}
+.arrow[data-v-f3bf5228] {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+.arrow i[data-v-f3bf5228] {
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    margin-left: -10px;
+    border-width: 10px;
+    border-color: transparent;
+    padding: 0;
+}
+.arrow em[data-v-f3bf5228] {
+    display: block;
+    position: absolute;
+    left: -9px;
+    border-width: 9px;
+    border-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+.arrow-type-top[data-v-f3bf5228] {
+  bottom: 1px;
+}
+.arrow-type-top i[data-v-f3bf5228] {
+    border-top-color: #d9d9d9;
+    border-style: solid dashed dashed;
+    top: 0;
+}
+.arrow-type-top em[data-v-f3bf5228] {
+    border-style: solid dashed dashed;
+    border-top-color: #ffffff;
+    top: -10px;
+}
+.arrow-type-bottom[data-v-f3bf5228] {
+  top: 1px;
+}
+.arrow-type-bottom i[data-v-f3bf5228] {
+    border-bottom-color: #d9d9d9;
+    border-style: dashed dashed solid;
+    top: -10px;
+}
+.arrow-type-bottom em[data-v-f3bf5228] {
+    border-style: dashed dashed solid;
+    border-bottom-color: #ffffff;
+    top: -8px;
+}
+.reader-night-mode .tips-card-loading[data-v-f3bf5228] {
+  background-color: #3F3F3F;
+  border-color: #2F2F2F;
+}
+.reader-night-mode .tips-card-loading .avatar[data-v-f3bf5228], .reader-night-mode .tips-card-loading .name[data-v-f3bf5228], .reader-night-mode .tips-card-loading .text[data-v-f3bf5228], .reader-night-mode .tips-card-loading .text-delay[data-v-f3bf5228], .reader-night-mode .tips-card-loading .count[data-v-f3bf5228], .reader-night-mode .tips-card-loading .type[data-v-f3bf5228], .reader-night-mode .tips-card-loading .button[data-v-f3bf5228] {
+    background-color: #545454;
+}
+.reader-night-mode .tips-card[data-v-f3bf5228] {
+  background-color: #3F3F3F;
+  border-color: #2F2F2F;
+}
+.reader-night-mode .tips-card .card-content .summary .name .nickname[data-v-f3bf5228] {
+    color: #C8C8C8;
+}
+.reader-night-mode .tips-card .card-content .summary .name .nickname[data-v-f3bf5228]:hover {
+      color: #ffffff;
+}
+.reader-night-mode .tips-card .card-content .summary .intro[data-v-f3bf5228] {
+    color: #C8C8C8;
+}
+.reader-night-mode .tips-card .card-footer[data-v-f3bf5228] {
+    border-top-color: #2F2F2F;
+}
+.reader-night-mode .tips-card .card-footer .profile div .count[data-v-f3bf5228] {
+      color: #C8C8C8;
+}
+.reader-night-mode .arrow.arrow-type-top em[data-v-f3bf5228] {
+  border-top-color: #3F3F3F;
+}
+.reader-night-mode .arrow.arrow-type-top i[data-v-f3bf5228] {
+  border-top-color: #2F2F2F;
+}
+.reader-night-mode .arrow.arrow-type-bottom em[data-v-f3bf5228] {
+  border-bottom-color: #3F3F3F;
+}
+.reader-night-mode .arrow.arrow-type-bottom i[data-v-f3bf5228] {
+  border-bottom-color: #2F2F2F;
+}
+</style><style type="text/css">
+.v-tooltip-container,
+.v-tooltip-content {
+  display: inline-block;
+}
+.v-tooltip-container {
+  position: relative;
+}
+.v-tooltip-container .v-tooltip-content {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.v-tooltip-container .v-tooltip-wrap {
+    position: absolute;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-top {
+      bottom: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding-bottom: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-bottom {
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding-top: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-left {
+      top: 50%;
+      right: 100%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      padding-right: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-right {
+      top: 50%;
+      left: 100%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      padding-left: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-top-start {
+      bottom: 100%;
+      left: 0;
+      padding-bottom: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-top-end {
+      bottom: 100%;
+      right: 0;
+      padding-bottom: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-bottom-start {
+      top: 100%;
+      left: 0;
+      padding-top: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-bottom-end {
+      top: 100%;
+      right: 0;
+      padding-top: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-left-start {
+      top: 0;
+      right: 100%;
+      padding-right: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-left-end {
+      bottom: 0;
+      right: 100%;
+      padding-right: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-right-start {
+      top: 0;
+      left: 100%;
+      padding-left: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-right-end {
+      bottom: 0;
+      left: 100%;
+      padding-left: 10px;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.like-button[data-v-cdecbe24] {
+  position: relative;
+  padding-left: 23px;
+}
+.like-button[data-v-cdecbe24]:before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: -16px;
+    width: 50px;
+    height: 50px;
+    background-image: url(//cdn2.jianshu.io/assets/web/zan_animation_steps-8d65a474b670eb6a022516f4e0b8e9a4.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 1050px 50px;
+}
+.like-button[data-v-cdecbe24]:hover:before {
+    background-position: -50px;
+}
+.like-button.zan-animation span[data-v-cdecbe24], .like-button.active span[data-v-cdecbe24] {
+    color: #333333;
+}
+body.reader-night-mode .like-button.zan-animation span[data-v-cdecbe24], body.reader-night-mode .like-button.active span[data-v-cdecbe24] {
+      color: #C8C8C8;
+}
+.like-button.zan-animation[data-v-cdecbe24]:before {
+    -webkit-animation: likeBlast-data-v-cdecbe24 0.6s 1 steps(19);
+            animation: likeBlast-data-v-cdecbe24 0.6s 1 steps(19);
+    background-position: right;
+}
+@-webkit-keyframes likeBlast {
+0% {
+    background-position: -50px;
+}
+100% {
+    background-position: right;
+}
+}
+@keyframes likeBlast-data-v-cdecbe24 {
+0% {
+    background-position: -50px;
+}
+100% {
+    background-position: right;
+}
+}
+.like-button.active[data-v-cdecbe24]:before {
+    background-position: right;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.youdao-recommended-ad {
+  position: relative;
+  display: block;
+}
+.youdao-recommended-ad .img {
+    display: block;
+    float: right;
+    width: 150px;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: RGB(241, 243, 244);
+    border-radius: 6px;
+    margin: -5px 0 0 15px;
+}
+body.reader-night-mode .youdao-recommended-ad .img {
+      background-color: #4f4f4f;
+}
+.youdao-recommended-ad .info {
+    overflow: hidden;
+}
+.youdao-recommended-ad .info .title {
+      display: block;
+      color: #333;
+      line-height: 27px;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: -4px;
+      cursor: pointer;
+}
+body.reader-night-mode .youdao-recommended-ad .info .title {
+        color: #969696;
+}
+.youdao-recommended-ad .info .intro {
+      display: block;
+      font-size: 13px;
+      color: #999;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 24px;
+      max-height: 48px;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      white-space: normal;
+}
+.youdao-recommended-ad .info .ad-badge {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      display: block;
+      width: 38px;
+      height: 18px;
+      line-height: 16px;
+      text-align: center;
+      border-radius: 2px;
+      border: solid 1px #999999;
+      color: #999999;
+      font-size: 12px;
+}
+</style></head>
+
+  <!-- 只给10%的用户添加代码 -->
+  <!-- ###第四范式-智能推荐：代码直接复制 无需修改参数### -->
+  <!-- ###功能：上报内容并反馈用户行为### -->
+  <!--
+  -->
+  <body lang="zh-CN" class="reader-black-font">
+    <!-- 全局顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="width-limit">
+    <!-- 左上方 Logo -->
+    <a class="logo" href="https://www.jianshu.com/"><img src="./Markdown基本语法 - 简书_files/nav-logo-4c7bbafe27adc892f3046e6978459bac.png" alt="Nav logo"></a>
+
+    <!-- 右上角 -->
+      <!-- 未登录显示登录/注册/写文章 -->
+      <a class="btn write-btn" target="_blank" href="https://www.jianshu.com/writer#/">
+        <i class="iconfont ic-write"></i>写文章
+</a>      <a class="btn sign-up" id="sign_up" href="https://www.jianshu.com/sign_up">注册</a>
+      <a class="btn log-in" id="sign_in" href="https://www.jianshu.com/sign_in">登录</a>
+
+    <!-- 如果用户登录，显示下拉菜单 -->
+
+    <div class="nqzzJ71pC-jOnJKAfdtr6_0"><a class="_3tScN0zmSdGLaUAH4SxTbM_0"><img src="./Markdown基本语法 - 简书_files/nav_jsds_beta-eeb44d165b8ba37680fdb7e65ae17ae4.png" class="_3f806byixOPpOPWnx8HiQP_0"></a> <!----></div>
+
+    <div class="style-mode"><a class="style-mode-btn"><i class="iconfont ic-navigation-mode"></i></a> <div class="popover-modal" style="left: 0px; display: none;"><div class="meta"><i class="iconfont ic-navigation-night"></i><span>夜间模式</span></div> <div class="switch day-night-group"><a class="switch-btn">开</a> <a class="switch-btn active">关</a></div> <hr> <div class="switch font-family-group"><a class="switch-btn font-song">宋体</a> <a class="switch-btn font-hei active">黑体</a></div> <div class="switch"><a class="switch-btn active">简</a> <a class="switch-btn">繁</a></div></div></div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+            <li class="tab ">
+              <a href="https://www.jianshu.com/">
+                <span class="menu-text">首页</span><i class="iconfont ic-navigation-discover menu-icon"></i>
+</a>            </li>
+            <li class="tab ">
+              <a id="web-nav-app-download-btn" class="app-download-btn" href="https://www.jianshu.com/apps?utm_medium=desktop&amp;utm_source=navbar-apps"><span class="menu-text">下载App</span><i class="iconfont ic-navigation-download menu-icon"></i></a>
+            </li>
+          <li class="search">
+            <form target="_blank" action="https://www.jianshu.com/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+              <input type="text" name="q" id="q" value="" autocomplete="off" placeholder="搜索" class="search-input">
+              <a class="search-btn" href="javascript:void(null)"><i class="iconfont ic-search"></i></a>
+</form>          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<div class="note">
+
+
+  <div id="note-fixed-ad-container">
+    <div id="fixed-ad-container">
+      <div style="display: block;"><a target="_blank" href="https://www.jianshu.com/apps/redirect?utm_source=side-banner-click" id="web-note-ad-fixed"><span class="close">×</span></a></div>
+      <div><a href="https://dsp-click.youdao.com/clk/request.s?slot=30edd91dd8637d9f645baa8448ba90b3&amp;k=ABh9tY866L4%2FqxpRpqpwHW6pMmeAZ0FxCSI49TQNAU7Xxo%2BoRxcJpjjAgKuViCqvhmLebSC%2BkLVxwNi3a%2Fxr%2B%2Bge%2BpUozH5Y4qJcwyR3EO5olmvgjwcSXBf2HlYt89r1DYWvErwB%2FaHXmhwnt%2Bqi6uBjI%2BDiUANWQs%2BIpG1zMqxv0yDKGUJ9hEviGVibSX2HEA7md3Hq7BOhGrSke341nqVN6BVwkooxryLvadi1XpsUmDcRLOYhYCSzGsT%2BHryqt%2B0MDz5bXHoJFk0KiyBQH8Bc8hTRkDkpUdNHMN2yVKRnoC530F36mhCe3%2FI6k3flfagW3Ctbe6OPfhuJ9fMs0BDC%2FyaebTNeoZmvZfWw%2BzclXvhbQRvORUM2O7GYA8f7ZWjKj8Law010FB04FJQaBJW7JIBXMGLxYv2riY1ZrFYKnukDSJ1%2BJxe2Ek6vkCVhTQxRCuW4eKCjxrTRG6JaoGZD%2F%2B%2FPJF9BpUEq3MsfWh2sgycZYxsLdneU2%2BWFTl6A5J2s4tPzbnVq4EgIsx%2B3bX%2BEVERn73xdo6G1QgQjRFkMLLJ86EllHS6d0P2yUhHwLNyHl%2BzQP43OYiUTgM%2BegOgDp4SmzJG3BPjqI5kmPk92RAq0cu51jGmkrcGhRCmPjjlsRycXkJLvIEgYwdSV9dQfcumYVFBANVWt%2B32yjmGkYK5xL1O1NiY%2FXAf6S0nOSgs5llYylutuO02wHMrnxfoRefaCNsIoHISYsu%2B5SKyy9zrEMiBksJOc8OEjg3YGgInkPB7zbSc4d%2By9hbIz4Qptdh3FWg5hnw8aLA%2Fj11h2sJl0Ip8r81pIvXpgj9VVg4bgm5JTXbe%2F2pbz%2Bpn%2BhWarRQxT4q3YWbCD1iov4gbjJzrA0hPSPW8n01JR8onIH5g8lAcKiE74tP54ndLQAFTXtV9T8jJUBfXdRjkzV%2F5va6tIyFvxfxtFI0iSjPpYwhvxqY8l3gfNZUKyDPrL2LQ21nytQOrQ06dNZQ6ugagiBDd79LQrRdpjZxeGLzhvKRDHVxGYcVZ4SFpAfezseEaSj7P%2FrbMSmCyRRXPSoZaamOU940WIkXQKVXvD9RdklebXHOwZ1spKNSgEpU0togBkUTGNafBu8gTaI6vXhC4t4kIdGo7Mq9AxbFwkXFrywk2%2FhXBTf%2BGlm5rWrbuWISiCqPaNSv%2FfB8ab2acm6LyK%2BijMDJYu5eRQTM72E594T7G7zWMW7JtmawwgV5eurzHBAR8hfyw8BIuYEBSuHBfXxo%2BoRxcJpjjAgKuViCqv18aPqEcXCaY4wICrlYgqr9fGj6hHFwmmOMCAq5WIKq97BTHGd%2FQf6VFAkBwV7rD5&amp;isrd=1&amp;youdao_bid=6c188087-862a-4418-bded-1734792c72b5&amp;iid=%7B%22-2067151026924529664%22%3A4%7D&amp;sid=17024&amp;tid=6" target="_blank" class="youdao-fixed-ad"><div class="img" style="background-image: url(&quot;https://oimageb5.ydstatic.com/image?id=-2067151026924529664&amp;product=adpublish&amp;w=360&amp;h=360&amp;sc=0&amp;rm=2&amp;gsb=0&amp;gsbd=60&quot;);"></div> <span class="ad-badge">广告</span></a> <!----></div>
+      <a href="http://e.cn.miaozhen.com/r/k=2110413&amp;p=7L9Gn&amp;dx=__IPDX__&amp;rt=2&amp;ns=__IP__&amp;ni=__IESID__&amp;v=__LOC__&amp;xa=__ADPLATFORM__&amp;tr=__REQUESTID__&amp;mo=__OS__&amp;m0=__OPENUDID__&amp;m0a=__DUID__&amp;m1=__ANDROIDID1__&amp;m1a=__ANDROIDID__&amp;m2=__IMEI__&amp;m4=__AAID__&amp;m5=__IDFA__&amp;m6=__MAC1__&amp;m6a=__MAC__&amp;vo=3f2e070eb&amp;vr=2&amp;o=https%3A%2F%2Fwww.jianshu.com%2Fp%2Fee05f7eff678" target="_blank" class="yuxi-fixed-ad" style="display: none;"><div class="img"></div> <span class="ad-badge">广告</span></a>
+       <div id="zhangxin-fixed-ad"></div>
+      <div id="_so_pdsBy_0"></div>
+    </div>
+  </div>
+  <div class="post">
+    <div class="article">
+        <h1 class="title">Markdown基本语法</h1>
+
+        <!-- 作者区域 -->
+        <div class="author">
+          <a class="avatar" href="https://www.jianshu.com/u/1f5ac0cf6a8b">
+            <img src="./Markdown基本语法 - 简书_files/b343643c-5ced-4421-ab58-1274e7bfe704" alt="96">
+</a>          <div class="info">
+            <span class="name"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b">高鸿祥</a></span>
+            <!-- 关注用户按钮 -->
+            <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+            <!-- 文章数据信息 -->
+            <div class="meta">
+              <!-- 简书钻 -->
+                <span class="jsd-meta">
+                  <i class="iconfont ic-paid1"></i> 121.0
+                </span>
+              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
+                <span class="publish-time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="最后编辑于 2020.02.24 13:40">2018.01.17 18:04*</span>
+              <span class="wordage">字数 1263</span>
+            <span class="views-count">阅读 1135791</span><span class="comments-count">评论 187</span><span class="likes-count">喜欢 1881</span><span class="rewards-count ">赞赏 1</span></div>
+          </div>
+          <!-- 如果是当前作者，加入编辑按钮 -->
+        </div>
+
+
+        <!-- 文章内容 -->
+        <div data-note-content="" class="show-content">
+          <div class="show-content-free">
+            <p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<p>相比WYSIWYG编辑器</p>
+<p><strong>优点：</strong><br>
+1、因为是纯文本，所以只要支持Markdown的地方都能获得一样的编辑效果，可以让作者摆脱排版的困扰，专心写作。<br>
+2、操作简单。比如:WYSIWYG编辑时标记个标题，先选中内容，再点击导航栏的标题按钮，选择几级标题。要三个步骤。而Markdown只需要在标题内容前加#即可</p>
+<p><strong>缺点：</strong><br>
+1、需要记一些语法（当然，是很简单。五分钟学会）。<br>
+2、有些平台不支持Markdown编辑模式。</p>
+<p>还好，简书是支持Markdown编辑模式的。</p>
+<pre class="hljs php"><code class="php">开启方式：设置-&gt;默认编辑器-&gt;Markdown编辑器
+</code></pre>
+<h1>一、标题</h1>
+<p>在想要设置为标题的文字前面加#来表示<br>
+一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p>
+<p>注：标准语法一般在#后跟个空格再写文字，貌似简书不加空格也行。</p>
+<p>示例：</p>
+<pre class="hljs bash"><code class="bash"><span class="hljs-comment"># 这是一级标题</span>
+<span class="hljs-comment">## 这是二级标题</span>
+<span class="hljs-comment">### 这是三级标题</span>
+<span class="hljs-comment">#### 这是四级标题</span>
+<span class="hljs-comment">##### 这是五级标题</span>
+<span class="hljs-comment">###### 这是六级标题</span>
+</code></pre>
+<p>效果如下：</p>
+<h1>这是一级标题</h1>
+<h2>这是二级标题</h2>
+<h3>这是三级标题</h3>
+<h4>这是四级标题</h4>
+<h5>这是五级标题</h5>
+<h6>这是六级标题</h6>
+<hr>
+<h1>二、字体</h1>
+<ul>
+<li>
+<h5>加粗</h5>
+</li>
+</ul>
+<p>要加粗的文字左右分别用两个*号包起来</p>
+<ul>
+<li>
+<h5>斜体</h5>
+</li>
+</ul>
+<p>要倾斜的文字左右分别用一个*号包起来</p>
+<ul>
+<li>
+<h5>斜体加粗</h5>
+</li>
+</ul>
+<p>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+<ul>
+<li>
+<h5>删除线</h5>
+</li>
+</ul>
+<p>要加删除线的文字左右分别用两个~~号包起来</p>
+<p>示例：</p>
+<pre class="hljs undefined"><code>**这是加粗的文字**
+*这是倾斜的文字*`
+***这是斜体加粗的文字***
+~~这是加删除线的文字~~
+</code></pre>
+<p>效果如下：</p>
+<p><strong>这是加粗的文字</strong><br>
+<em>这是倾斜的文字</em><br>
+<strong><em>这是斜体加粗的文字</em></strong><br>
+<del>这是加删除线的文字</del></p>
+<hr>
+<h1>三、引用</h1>
+<p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br>
+n个...<br>
+貌似可以一直加下去，但没神马卵用</p>
+<p>示例：</p>
+<pre class="hljs ruby"><code class="ruby">&gt;这是引用的内容
+<span class="hljs-meta">&gt;&gt;</span>这是引用的内容
+<span class="hljs-meta">&gt;&gt;</span>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容
+</code></pre>
+<p>效果如下：</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1>四、分割线</h1>
+<p>三个或者三个以上的 - 或者 * 都可以。</p>
+<p>示例：</p>
+<pre class="hljs undefined"><code>---
+----
+***
+*****
+</code></pre>
+<p>效果如下：<br>
+可以看到，显示效果是一样的。</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1>五、图片</h1>
+<p>语法：</p>
+<pre class="hljs bash"><code class="bash">![图片alt](图片地址 <span class="hljs-string">''</span>图片title<span class="hljs-string">''</span>)
+
+图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
+图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
+</code></pre>
+<p>示例：</p>
+<pre class="hljs cpp"><code class="cpp">![blockchain](https:<span class="hljs-comment">//ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/</span>
+u=<span class="hljs-number">702257389</span>,<span class="hljs-number">1274025419</span>&amp;fm=<span class="hljs-number">27</span>&amp;gp=<span class="hljs-number">0.</span>jpg <span class="hljs-string">"区块链"</span>)
+</code></pre>
+<p>效果如下：</p>
+<br>
+<div class="image-package">
+<div class="image-container" style="max-width: 550px; max-height: 300px; background-color: transparent;">
+<div class="image-container-fill" style="padding-bottom: 54.55%;"></div>
+<div class="image-view" data-width="550" data-height="300"><img data-original-src="//upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg" data-original-width="550" data-original-height="300" data-original-format="" data-original-filesize="18039" style="cursor: zoom-in;" class="" src="./Markdown基本语法 - 简书_files/6860761-fd2f51090a890873.jpg"></div>
+</div>
+<div class="image-caption">blockchain</div>
+</div>
+<p><strong>上传本地图片直接点击导航栏的图片标志，选择图片即可</strong></p>
+<p>markdown格式追求的是简单、多平台统一。那么图片的存储就是一个问题，需要用图床，提供统一的外链，这样就不用在不同的平台去处理图片的问题了。才能做到书写一次，各处使用。<br>
+关于图床的选择我写了一篇文章，对网上存在的各种方法做了总结，需要的朋友可以看看。<a href="https://www.jianshu.com/p/ea1eb11db63f" target="_blank">markdown图床</a></p>
+<h1>六、超链接</h1>
+<p>语法：</p>
+<pre class="hljs bash"><code class="bash">[超链接名](超链接地址 <span class="hljs-string">"超链接title"</span>)
+title可加可不加
+</code></pre>
+<p>示例：</p>
+<pre class="hljs cpp"><code class="cpp">[简书](http:<span class="hljs-comment">//jianshu.com)</span>
+[百度](http:<span class="hljs-comment">//baidu.com)</span>
+</code></pre>
+<p>效果如下：</p>
+<p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a><br>
+<a href="https://links.jianshu.com/go?to=http%3A%2F%2Fbaidu.com" target="_blank">百度</a></p>
+<p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。</p>
+<pre class="hljs xml"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"超链接地址"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span>超链接名<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+示例
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.jianshu.com/u/1f5ac0cf6a8b"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span>简书<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<hr>
+<h1>七、列表</h1>
+<h5>无序列表</h5>
+<p>语法：<br>
+无序列表用 - + * 任何一种都可以</p>
+<pre class="hljs undefined"><code>- 列表内容
++ 列表内容
+* 列表内容
+
+注意：- + * 跟内容之间都要有一个空格
+
+</code></pre>
+<p>效果如下：</p>
+<ul>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ul>
+<h5>有序列表</h5>
+<p>语法：<br>
+数字加点</p>
+<pre class="hljs undefined"><code>1. 列表内容
+2. 列表内容
+3. 列表内容
+
+注意：序号跟内容之间要有空格
+</code></pre>
+<p>效果如下：</p>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<h5>列表嵌套</h5>
+<p><strong>上一级和下一级之间敲三个空格即可</strong></p>
+<ul>
+<li>
+<p>一级无序列表内容</p>
+<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+<li>
+<p>一级无序列表内容</p>
+<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ul>
+<ol>
+<li>
+<p>一级有序列表内容</p>
+<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+<li>
+<p>一级有序列表内容</p>
+<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h1>八、表格</h1>
+<p>语法：</p>
+<pre class="hljs ruby"><code class="ruby">表头<span class="hljs-params">|表头|</span>表头
+---<span class="hljs-params">|:--:|</span>---:
+内容<span class="hljs-params">|内容|</span>内容
+内容<span class="hljs-params">|内容|</span>内容
+
+第二行分割表头和内容。
+- 有一个就行，为了对齐，多加了几个
+文字默认居左
+-两边加：表示文字居中
+-右边加：表示文字居右
+注：原生的语法两边都要用 <span class="hljs-params">| 包起来。此处省略
+</span></code></pre>
+<p>示例：</p>
+<pre class="hljs ruby"><code class="ruby">姓名<span class="hljs-params">|技能|</span>排行
+--<span class="hljs-params">|:--:|</span>--:
+刘备<span class="hljs-params">|哭|</span>大哥
+关羽<span class="hljs-params">|打|</span>二哥
+张飞<span class="hljs-params">|骂|</span>三弟
+</code></pre>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th style="text-align:center">技能</th>
+<th style="text-align:right">排行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刘备</td>
+<td style="text-align:center">哭</td>
+<td style="text-align:right">大哥</td>
+</tr>
+<tr>
+<td>关羽</td>
+<td style="text-align:center">打</td>
+<td style="text-align:right">二哥</td>
+</tr>
+<tr>
+<td>张飞</td>
+<td style="text-align:center">骂</td>
+<td style="text-align:right">三弟</td>
+</tr>
+</tbody>
+</table>
+<h1>九、代码</h1>
+<p>语法：<br>
+单行代码：代码之间分别用一个反引号包起来</p>
+<pre class="hljs javascript"><code class="javascript">    <span class="hljs-string">`代码内容`</span>
+</code></pre>
+<p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
+<pre class="hljs javascript"><code class="javascript">(<span class="hljs-string">``</span><span class="hljs-string">`)
+  代码...
+  代码...
+  代码...
+(`</span><span class="hljs-string">``</span>)
+</code></pre>
+<blockquote>
+<p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p>
+</blockquote>
+<p>示例：</p>
+<p>单行代码</p>
+<pre class="hljs javascript"><code class="javascript"><span class="hljs-string">`create database hero;`</span>
+</code></pre>
+<p>代码块</p>
+<pre class="hljs php"><code class="php">(```)
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span><span class="hljs-params">()</span></span>{
+         <span class="hljs-keyword">echo</span> <span class="hljs-string">"这是一句非常牛逼的代码"</span>;
+    }
+    fun();
+(```)
+</code></pre>
+<p>效果如下：</p>
+<p>单行代码</p>
+<p><code>create database hero;</code></p>
+<p>代码块</p>
+<pre class="hljs php"><code class="php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span><span class="hljs-params">()</span></span>{
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">"这是一句非常牛逼的代码"</span>;
+}
+fun();
+</code></pre>
+<h1>十、流程图</h1>
+<pre class="hljs php"><code class="php">```flow
+st=&gt;start: 开始
+op=&gt;operation: My Operation
+cond=&gt;condition: Yes <span class="hljs-keyword">or</span> No?
+e=&gt;end
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+&amp;```
+</code></pre>
+<p>效果如下：<br>
+简书不支持流程图，所以截了个图</p>
+<br>
+<div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 467px; background-color: transparent;">
+<div class="image-container-fill" style="padding-bottom: 62.18%;"></div>
+<div class="image-view" data-width="751" data-height="467"><img data-original-src="//upload-images.jianshu.io/upload_images/6860761-9d9524ba31047696.png" data-original-width="751" data-original-height="467" data-original-format="" data-original-filesize="15560" style="cursor: zoom-in;" class="" src="./Markdown基本语法 - 简书_files/6860761-9d9524ba31047696.png"></div>
+</div>
+<div class="image-caption">流程图.png</div>
+</div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- 如果是付费文章，未购买，则显示购买按钮 -->
+
+    <!-- 连载目录项 -->
+
+    <!-- 如果是付费文章 -->
+      <!-- 如果是付费连载，已购买，且作者允许赞赏，则显示付费信息和赞赏 -->
+        <div id="free-reward-panel" class="support-author"><p>小礼物走一走，来简书关注我</p> <div class="btn btn-pay">赞赏支持</div> <div class="supporter"><ul class="support-list"><li><a target="_blank" href="https://www.jianshu.com/u/c08977537fb2" class="avatar"><img src="./Markdown基本语法 - 简书_files/5c87d213-948c-40e5-8e2a-193107852ee0.jpg"></a></li></ul> <!----></div> <!----> <!----></div>
+
+      <div class="show-foot">
+        <a class="notebook" href="https://www.jianshu.com/nb/21225181">
+          <i class="iconfont ic-search-notebook"></i>
+          <span>编程</span>
+</a>        <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
+          © 著作权归作者所有
+        </div>
+        <div class="modal-wrap" data-report-note="">
+          <a id="report-modal">举报文章</a>
+        </div>
+      </div>
+
+      <!-- 文章底部作者信息 -->
+        <div class="follow-detail">
+          <div class="info">
+            <a class="avatar" href="https://www.jianshu.com/u/1f5ac0cf6a8b">
+              <img src="./Markdown基本语法 - 简书_files/b343643c-5ced-4421-ab58-1274e7bfe704" alt="96">
+</a>            <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+            <a class="title" href="https://www.jianshu.com/u/1f5ac0cf6a8b">高鸿祥</a>
+          <p>写了 79142 字，被 646 人关注，获得了 2082 个喜欢</p></div>
+        </div>
+
+    <div class="meta-bottom">
+      <div data-v-6ddd02c6="" class="like"><div data-v-6ddd02c6="" class="btn like-group"><div data-v-6ddd02c6="" class="btn-like"><a data-v-6ddd02c6="">喜欢</a></div> <div data-v-6ddd02c6="" class="modal-wrap"><a data-v-6ddd02c6="">1881</a></div></div> <!----></div>
+      <div class="share-group">
+        <a class="share-circle" data-action="weixin-share" data-toggle="tooltip" data-original-title="分享到微信">
+          <i class="iconfont ic-wechat"></i>
+        </a>
+        <a class="share-circle" data-action="weibo-share" data-toggle="tooltip" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;&#39;, &#39;推荐 高鸿祥 的文章《Markdown基本语法》（ 分享自 @简书 ）&#39;,&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-original-title="分享到微博">
+          <i class="iconfont ic-weibo"></i>
+        </a>
+        <a class="share-circle" data-toggle="tooltip" id="longshare" target="_blank" data-original-title="" title="">
+            <div class="qrcode" id="qrcode">
+             <img src="./Markdown基本语法 - 简书_files/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png" alt="Download index side qrcode">
+             <p>下载app生成长微博图片</p>
+             </div>
+          <i class="iconfont ic-picture"></i>
+        </a>
+        <a class="share-circle more-share" tabindex="0" data-toggle="popover" data-placement="top" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="
+          &lt;ul class=&quot;share-list&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 高鸿祥 的文章《Markdown基本语法》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-zone&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 高鸿祥 的文章《Markdown基本语法》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-twitter&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-facebook&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-google&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;Markdown基本语法&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-douban&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        " data-original-title="" title="">更多分享</a>
+      </div>
+    </div>
+
+    <div id="note-ad" class=""><a id="web-note-ad-1" target="_blank" href="https://www.jianshu.com/apps/redirect?utm_source=note-bottom-click"><img src="./Markdown基本语法 - 简书_files/web-note-ad-1-c2e1746859dbf03abe49248893c9bea4.png" alt="Web note ad 1"></a></div>
+
+    <!--
+    <div id="note-comment-above-ad-container">
+      <span id="youdao-comment-ad" class="ad-badge">广告</span>
+    </div>
+    -->
+    <div><div id="comment-list" class="comment-list"><div><form class="new-comment"><a class="avatar"><img src="./Markdown基本语法 - 简书_files/avatar_default-78d4d1f68984cd6d4379508dd94b4210.png"></a> <div class="sign-container"><a href="https://www.jianshu.com/sign_in?utm_source=desktop&amp;utm_medium=not-signed-in-comment-form" class="btn btn-sign">登录</a> <span>后发表评论</span></div></form> <!----></div> <div id="featured-comment-list"><div class="top-title"><span>精彩评论（3）</span></div> <div id="comment-37950893" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/c83e0d8b87bc" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/b26d7410-3f9c-4257-a545-97531529e0d9.jpg"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/c83e0d8b87bc" target="_blank" class="name">文武之道定乾坤</a> <!----> <!----> <div class="meta"><span>52楼 · 2019.03.27 07:35</span></div></div></div> <div class="comment-wrap"><p>作者的文章写得非常的认真<br><br>———————《华丽丽的分割线》————————<br>听说多留言就会有人回粉<br>或者至少互相点个喜欢</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-37950893" class="like-button"><span data-v-cdecbe24="">24人赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list hide"><!----> <!----></div></div><div id="comment-41618609" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/4f1c33331216" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/a6f3848d-99ff-4fc5-b5f1-619f68e420ee"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/4f1c33331216" target="_blank" class="name">Musa_04ec</a> <!----> <!----> <div class="meta"><span>73楼 · 2019.05.31 18:05</span></div></div></div> <div class="comment-wrap"><p>最后的流程图，自己尝试去敲，就报错，但是复制就有问题，文章真的不错<img src="./Markdown基本语法 - 简书_files/+1.png" alt=":+1:" title=":+1:" class="emoji" width="20" height="20"></p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-41618609" class="like-button"><span data-v-cdecbe24="">9人赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-41618838" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/5def981319d8" target="_blank">忘川_王富贵</a>：
+            </div> <!----></div> <span>所以两种方法都有问题？<img src="./Markdown基本语法 - 简书_files/joy.png" alt=":joy:" title=":joy:" class="emoji" width="20" height="20"></span> <!----></p> <div class="sub-tool-group"><span>2019.05.31 18:11</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div><div id="comment-43265437" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/783d4ee159b9" target="_blank">风一样的少粘</a>：
+            </div> <!----></div> <span>你应该上神评</span> <!----></p> <div class="sub-tool-group"><span>2019.07.10 10:23</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div><div id="comment-46232834" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/c663608bc774" target="_blank">supalle</a>：
+            </div> <!----></div> <span>最后的流程图，注意一下最后的那个：&amp;```   ；把三个点前面的  &amp;  去掉，就好了</span> <!----></p> <div class="sub-tool-group"><span>2019.08.30 00:25</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <span class="line-warp">
+          还有3条评论，
+          <a>展开查看</a></span> <!----> <!----></div> <!----></div></div><div id="comment-43850168" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/ab8ab3506052" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/30ba4590-6a20-46b3-8e12-5729a50c1f8f"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/ab8ab3506052" target="_blank" class="name">安_0701</a> <!----> <!----> <div class="meta"><span>81楼 · 2019.07.22 10:14</span></div></div></div> <div class="comment-wrap"><p>简书写文章有稿费吗?</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-43850168" class="like-button"><span data-v-cdecbe24="">3人赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-49245471" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>有简书钻，能转成钱，貌似挺麻烦，没弄过</span> <!----></p> <div class="sub-tool-group"><span>2019.11.01 15:26</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div></div> <div class="comments-placeholder" style="display: none;"><div class="author"><div class="avatar"></div> <div class="info"><div class="name"></div> <div class="meta"></div></div></div> <div class="text"></div> <div class="text animation-delay"></div> <div class="tool-group"><i class="iconfont ic-zan-active"></i><div class="zan"></div> <i class="iconfont ic-list-comments"></i><div class="zan"></div></div></div> <div id="normal-comment-list" class="normal-comment-list"><div><div><div class="top-title"><span>187条评论</span> <a class="author-only">只看作者</a> <a class="close-btn" style="display: none;">关闭评论</a> <div class="pull-right"><a class="active">按时间倒序</a><a class="">按时间正序</a></div></div></div> <!----> <!----> <div class="comments-placeholder" style="display: none;"><div class="author"><div class="avatar"></div> <div class="info"><div class="name"></div> <div class="meta"></div></div></div> <div class="text"></div> <div class="text animation-delay"></div> <div class="tool-group"><i class="iconfont ic-zan-active"></i><div class="zan"></div> <i class="iconfont ic-list-comments"></i><div class="zan"></div></div></div> <div id="comment-54151400" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/2b5d4723dc19" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/e2bf5b75-e034-4380-a2e7-49acc7499b40"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/2b5d4723dc19" target="_blank" class="name">黄小果儿_Frances</a> <!----> <!----> <div class="meta"><span>107楼 · 2020.02.25 14:29</span></div></div></div> <div class="comment-wrap"><p>超链接我期望在github上新窗口打开，[]()替换为html的a标签了也还是当前窗口打开哦。</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-54151400" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-54166173" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>贴出来看看你怎么写的</span> <!----></p> <div class="sub-tool-group"><span>2020.02.25 21:08</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-53998553" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/f03946d515bf" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/d4f7dcd5-5a8c-4383-82e0-1fdd6351121d.jpg"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/f03946d515bf" target="_blank" class="name">顽刀</a> <!----> <!----> <div class="meta"><span>106楼 · 2020.02.21 22:13</span></div></div></div> <div class="comment-wrap"><p>感谢分享，写得很好</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-53998553" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list hide"><!----> <!----></div></div><div id="comment-53891526" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/b343643c-5ced-4421-ab58-1274e7bfe704(1)"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank" class="name">高鸿祥</a> <span class="author-tag">作者</span> <!----> <div class="meta"><span>105楼 · 2020.02.19 14:34</span></div></div></div> <div class="comment-wrap"><p>我想大家用markdown书写文章肯定遇到了图片存储的问题。写了一篇关于图床的文章<a href="https://www.jianshu.com/p/ea1eb11db63f" rel="nofollow" target="_blank">https://www.jianshu.com/p/ea1eb11db63f</a>，有需要的朋友可以看看</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-53891526" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list hide"><!----> <!----></div></div><div id="comment-53654254" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/af6d1665fcbc" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/43fd6671-4af2-49f1-b0bf-203ec4a238ab.jpeg"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/af6d1665fcbc" target="_blank" class="name">frank2336</a> <!----> <!----> <div class="meta"><span>104楼 · 2020.02.13 20:15</span></div></div></div> <div class="comment-wrap"><p>非常好</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-53654254" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-53891540" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>多谢</span> <!----></p> <div class="sub-tool-group"><span>2020.02.19 14:35</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-52662521" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/04b1b9566ad4" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/df755059-1c5b-443a-8bf5-b284d834d82e"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/04b1b9566ad4" target="_blank" class="name">海燕儿不一样</a> <!----> <img src="./Markdown基本语法 - 简书_files/ec7b4a53-cd02-46ad-b136-dfa3751cff1e" data-toggle="tooltip" data-original-title="日更达人" class="badge-icon"> <div class="meta"><span>103楼 · 2020.01.17 15:42</span></div></div></div> <div class="comment-wrap"><p>表格格式尝试失败，引用也失败，我这样罗列的<br><br>＞引用   加多少个大于号都没用<br><br>-｜-｜-｜- 加多少减号或者加不加冒号（或者调整冒号位置）都无用<br><br>不知我的问题在哪儿，还请路过的大神们帮忙指点🙏</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-52662521" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-53352129" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/2f24bd181325" target="_blank">吴邪的女朋友</a>：
+            </div> <!----></div> <span>英文键盘下输入冒号才有用，是不是弄成中文格式了</span> <!----></p> <div class="sub-tool-group"><span>2020.02.06 11:50</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div><div id="comment-53352594" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/04b1b9566ad4" target="_blank">海燕儿不一样</a>：
+            </div> <!----></div> <span><a href="https://www.jianshu.com/u/2f24bd181325" class="maleskine-author" target="_blank" data-user-slug="2f24bd181325">@吴邪的女朋友</a> 感谢感谢，已经解决了。居然忘记在这里的询问了，感谢解答🙏</span> <!----></p> <div class="sub-tool-group"><span>2020.02.06 12:05</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-52661476" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/04b1b9566ad4" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/df755059-1c5b-443a-8bf5-b284d834d82e"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/04b1b9566ad4" target="_blank" class="name">海燕儿不一样</a> <!----> <img src="./Markdown基本语法 - 简书_files/ec7b4a53-cd02-46ad-b136-dfa3751cff1e" data-toggle="tooltip" data-original-title="日更达人" class="badge-icon"> <div class="meta"><span>102楼 · 2020.01.17 15:12</span></div></div></div> <div class="comment-wrap"><p>非常好用，收录了，以后随时可以翻阅👍</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-52661476" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list hide"><!----> <!----></div></div><div id="comment-52589338" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1b5909f2bc97" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/5bafd193-7ad2-4753-b01f-1a0af157c3b4"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/1b5909f2bc97" target="_blank" class="name">Knightstream</a> <!----> <!----> <div class="meta"><span>101楼 · 2020.01.15 19:01</span></div></div></div> <div class="comment-wrap"><p>感谢!</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-52589338" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list hide"><!----> <!----></div></div><div id="comment-52472349" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/5a176f72d319" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/613eadcd-a8a5-4439-b71e-acc01aace30e"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/5a176f72d319" target="_blank" class="name">邓_9bbd</a> <!----> <!----> <div class="meta"><span>100楼 · 2020.01.12 17:31</span></div></div></div> <div class="comment-wrap"><p>你好，感谢您的分享，但是我在使用图片的语法时，图片下面的文字无法像您一样的正常显示，请问还有其他方法可以做到吗？</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-52472349" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586261" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>这个无所谓吧。你要想介绍图片，直接加点文字介绍就好。</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:01</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-52365826" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/7ae684139a66" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/c8bd2765-01ad-4790-8864-23572f0badd3"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/7ae684139a66" target="_blank" class="name">猫南北_4def</a> <!----> <!----> <div class="meta"><span>99楼 · 2020.01.09 23:00</span></div></div></div> <div class="comment-wrap"><p>老哥，想把这篇文章转载到我的个人博客上去可以么？会标明出处与作者。期待回复。</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-52365826" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586265" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>可以的</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:01</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-52025602" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/79cb084ad45b" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/de0f5331-cea1-45c5-81e8-dcd1bb7a9843"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/79cb084ad45b" target="_blank" class="name">别和我说话我烦</a> <!----> <!----> <div class="meta"><span>98楼 · 2020.01.02 02:47</span></div></div></div> <div class="comment-wrap"><p>谢谢</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-52025602" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586345" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>不客气</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:04</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-51783589" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/b96b0f6f91ed" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/8-a356878e44b45ab268a3b0bbaaadeeb7.jpg"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/b96b0f6f91ed" target="_blank" class="name">墨蓝的星空</a> <!----> <!----> <div class="meta"><span>97楼 · 2019.12.27 14:30</span></div></div></div> <div class="comment-wrap"><p>**这条评论是用markdown写的啊**</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-51783589" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586343" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>哈哈，评论貌似不行</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:03</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-50959560" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/7f81296ebd5c" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/41a0f189-d939-4338-9d6a-93407be836fd.jpg"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/7f81296ebd5c" target="_blank" class="name">时_零</a> <!----> <!----> <div class="meta"><span>96楼 · 2019.12.09 15:23</span></div></div></div> <div class="comment-wrap"><p>----<br>学习了</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-50959560" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586338" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>用起来哈哈</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:03</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-50662258" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/9967d3cfc54d" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/2bafb815-89d2-4505-87e1-13ce3fc52a3d"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/9967d3cfc54d" target="_blank" class="name">时间海_5aa9</a> <!----> <!----> <div class="meta"><span>95楼 · 2019.12.02 22:09</span></div></div></div> <div class="comment-wrap"><p>可以可以，收获颇丰，谢谢大佬</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-50662258" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586320" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>对您有用就好</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:03</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-50362758" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/24b06a693cca" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/9f03eb8e-c3e6-41fe-824c-7f3b8e9bcd14"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/24b06a693cca" target="_blank" class="name">森林_dca4</a> <!----> <!----> <div class="meta"><span>94楼 · 2019.11.26 11:17</span></div></div></div> <div class="comment-wrap"><p>能转载吗老哥</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-50362758" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586272" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>可以的</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:01</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div><div id="comment-50185335" class="comment"><div><div class="author"><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/87f43d4c1f93" target="_blank" class="avatar"><img src="./Markdown基本语法 - 简书_files/897745a3-1c68-4ee0-9029-c8d08aa0b2b7.jpg"></a>  </div> <!----></div> <div class="info"><a href="https://www.jianshu.com/u/87f43d4c1f93" target="_blank" class="name">Mright丨</a> <!----> <!----> <div class="meta"><span>93楼 · 2019.11.22 14:27</span></div></div></div> <div class="comment-wrap"><p>扫盲, 扫扫我... 受教了.</p> <!----> <div class="tool-group"><a data-v-cdecbe24="" id="like-button-50185335" class="like-button"><span data-v-cdecbe24="">赞</span></a> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list"><div id="comment-52586313" class="sub-comment"><p><div data-v-f3bf5228="" class="v-tooltip-container" style="z-index: 0;"><div class="v-tooltip-content"><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">高鸿祥</a>：
+            </div> <!----></div> <span>客气</span> <!----></p> <div class="sub-tool-group"><span>2020.01.15 17:02</span> <a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div> <div class="sub-comment more-comment"><a class="add-comment-btn"><i class="iconfont ic-subcomment"></i> <span>添加新评论</span></a> <!----> <!----> <!----></div> <!----></div></div></div></div> <!----> <div><ul class="pagination"><!---->  <li><a href="javascript:void(null)" class="active">1</a></li> <li><a>2</a></li><li><a>3</a></li><li><a>4</a></li> <li><a>下一页</a></li></ul></div></div></div>
+  </div>
+
+  <div class="side-tool"><ul><li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="回到顶部" style=""><a class="function-button"><i class="iconfont ic-backtop"></i></a></li> <!----> <!----> <!----> <!----> <li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="分享文章" id="share"><a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="&lt;ul class=&#39;share-list&#39; style=&quot;width:220px&quot;&gt;
+                  &lt;li&gt;&lt;a class=&quot;weixin-share&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-weixin&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到微信&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;&#39;, &#39;推荐 高鸿祥 的文章《Markdown基本语法》（ 分享自 @简书 ）&#39;,&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-weibo&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到微博&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 高鸿祥 的文章《Markdown基本语法》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-zone&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 高鸿祥 的文章《Markdown基本语法》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-twitter&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-facebook&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-google&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;https://www.jianshu.com/p/191d1e21f7ed?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;Markdown基本语法&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-douban&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;" data-original-title="" title="" class="function-button"><i class="iconfont ic-share"></i></a> <!----></li> <!----></ul></div>
+</div>
+<div class="note-bottom">
+  <div><div class="main"><div class="title">被以下专题收入，发现更多相似内容</div> <!----> <div class="include-collection"><!----> <a href="https://www.jianshu.com/c/140e1de9152a?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./Markdown基本语法 - 简书_files/00e93901213fb80ef9ceac7132d12f2eb938947d.jpg"><div class="name">markdown</div></a><a href="https://www.jianshu.com/c/34d024cdc8b4?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./Markdown基本语法 - 简书_files/OmniGraffle.png"><div class="name">OminiGr...</div></a><a href="https://www.jianshu.com/c/aa600f4bce76?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./Markdown基本语法 - 简书_files/timg.jpg"><div class="name">Python</div></a><a href="https://www.jianshu.com/c/975781faba19?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./Markdown基本语法 - 简书_files/1.jpg"><div class="name">方法论</div></a><a href="https://www.jianshu.com/c/c5c8e563e694?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./Markdown基本语法 - 简书_files/1121472.png"><div class="name">markdown</div></a><a href="https://www.jianshu.com/c/9cff95747636?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./Markdown基本语法 - 简书_files/IMG_0098.jpg"><div class="name">Python相关点</div></a><a href="https://www.jianshu.com/c/15612e6543ef?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./Markdown基本语法 - 简书_files/timg_(2).jpg"><div class="name">工具集</div></a> <a class="show-more">
+        展开更多
+        <i class="iconfont ic-show"></i></a></div></div> <!----> <!----></div>
+  <div><div class="recommend-note"><div class="meta"><div class="title">
+        推荐阅读
+        <a target="_blank" href="https://www.jianshu.com/" class="more">
+           更多精彩内容<i class="iconfont ic-link"></i></a></div></div> <div class="list"><div class="note have-img"><a target="_blank" href="https://www.jianshu.com/p/4406d4ac2955?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="cover" style="background-image: url(&quot;https://upload-images.jianshu.io/upload_images/18529253-7c63a3d53e703e52?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240/format/webp&quot;);"></a> <a target="_blank" href="https://www.jianshu.com/p/4406d4ac2955?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="title">10天3名医生猝死，46岁李冰冰“身体报废”：别再熬夜，真的会死</a> <p class="description">作者：洞见Fine 人类从不做正确的事，他们总做最有快感的事，然后后悔。 01 世上最可怕的不是悲剧，而是悲剧的重复。 看到一则消息，7月4日，中科院博士肖育众突发心脏骤停，晕倒在实验室，送至医院抢救无效去世。 这一天，距离他的孩子出生才刚刚过去7天，而他自己的人生，也才走过31年。 在去世前，他曾连续多日加班到深夜。长期熬夜，造成了心源性猝死。 令人痛心的是，这已经是10天之内第3例年轻医生突发性死亡的事件了。 在肖育众发生意外的5天前，6月30日，北京同仁医院眼科医师王辉博士，也突发急性心肌梗死，年仅32岁。 6月28日，河南省肿瘤医院乳腺科副主任医师张恒伟，突发心梗不幸离世，年仅4...</p> <a target="_blank" href="https://www.jianshu.com/u/f078de463c28?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="author"><div class="avatar" style="background-image: url(&quot;https://upload.jianshu.io/users/upload_avatars/18529253/.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/24/h/24/format/webp&quot;);"></div> <span class="name">铁成武</span></a></div><div class="note"><!----></div><div class="note have-img"><a target="_blank" href="https://www.jianshu.com/p/834215f67353?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="cover" style="background-image: url(&quot;https://upload-images.jianshu.io/upload_images/18529253-32cacdf3eb476ea6?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240/format/webp&quot;);"></a> <a target="_blank" href="https://www.jianshu.com/p/834215f67353?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="title">考上清华后，他拆穿了父亲的谎言：有一种爱是我情愿被你骗</a> <p class="description">你说的谎言，我都相信。 谎言 周鹏宇收到清华录取通知书这天，本应是全家最高兴，值得庆祝的日子。 但同样是在这一天，家人告知了他或许是人生中最坏的消息：父亲一年前就查出了癌症。 父亲确诊癌症那天，周鹏宇刚刚升上高三，迎接最重要的一年冲刺。 母亲得知消息后，愁的一夜间鬓角全白。 最后是父亲决定隐瞒到底，只说自己得了点小毛病，要去医院看看。 为了避免孩子起疑，他还让老婆留下来照顾孩子。 所以当周鹏宇在教室看书时，父亲其实独自在医院和癌症斗争。 母亲奔波在学校和家之间，像平常一样做饭、鼓励、送东西，宛若什么都没有发生。 只有自己一个人呆着时，才敢偷偷抹泪。 一边是丈夫的现在，一边是孩子的未来，她...</p> <a target="_blank" href="https://www.jianshu.com/u/f078de463c28?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="author"><div class="avatar" style="background-image: url(&quot;https://upload.jianshu.io/users/upload_avatars/18529253/.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/24/h/24/format/webp&quot;);"></div> <span class="name">铁成武</span></a></div><div class="note have-img"><a target="_blank" href="https://www.jianshu.com/p/406170712c8c?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="cover" style="background-image: url(&quot;https://upload-images.jianshu.io/upload_images/2425636-9b5676d54f686366.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240/format/webp&quot;);"></a> <a target="_blank" href="https://www.jianshu.com/p/406170712c8c?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="title">17种会让你变开心的生活习惯</a> <p class="description">17种会让你变开心的生活习惯 1.每天拍几张照片 心理学家建议，每天用相机拍下一些身边的人和事，如窗外的树木、路边的小花、邻居家的孩子和朋友的婚礼。将这些随时可能被遗忘的片段记录起来，当你不定期整理照片时，你会觉得所有的细节都是美好回忆，没什么可抱怨的，于是人会很容易变得快乐起来。 2.看悲伤的电影 看一部令人伤感的电影，情难自禁时，不妨尽情地放声哭出来，然后安慰自己说，还好这只是电影情节，并不是真实的生活，心情便会大有改观。 这是一种反向思考的方法，常运用在心理学中，帮助人们换角度思问题。 3.在周末的清晨做白日梦 不少能干的主妇，会从星期六一大早起床开始，马不停蹄地做家务活，如收拾屋...</p> <a target="_blank" href="https://www.jianshu.com/u/6f226dfee850?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="author"><div class="avatar" style="background-image: url(&quot;https://upload.jianshu.io/users/upload_avatars/2425636/1b227cf0-8050-407e-bb90-f099f25a6327.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/24/h/24/format/webp&quot;);"></div> <span class="name">伦小野</span></a></div><div class="note have-img"><a target="_blank" href="https://www.jianshu.com/p/2ce75f45b329?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="cover" style="background-image: url(&quot;https://upload-images.jianshu.io/upload_images/15644970-444fb8cc195decc2?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240/format/webp&quot;);"></a> <a target="_blank" href="https://www.jianshu.com/p/2ce75f45b329?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="title">租房是每个外地人离黑社会最近的一次</a> <p class="description">如果你喜欢我的分享，欢迎点赞和评论，每天的前20个赞我都会回赞。 小刘从猫眼里望去，三个戴着墨镜的彪形大汉在门外一字排开，脖子三层褶，黑背心遮住一半过肩龙纹身贴，边缘已经有点起皮了。 小刘关着屋里所有的灯假装家里没人，屏住呼吸蹲在门后等剧烈的敲门声停下来。确认大汉们已经走得足够远了，他终于敢打开门把贴在门上的纸揪下来。 这张落款房东的纸上白底红字地写着：最后一天，不然换锁。 小刘是隔壁写字楼的程序员，没得罪什么夜场大哥也没借高利贷，在中介请他一周之内搬离出租屋之前，他一直以为自己和这种努力打扮成地头蛇的胖子生活在两个次元。 这是他被通知收房的第八天。尽管上帝用七天创造了世界，小刘做不到在...</p> <a target="_blank" href="https://www.jianshu.com/u/c354b9d4d28b?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="author"><div class="avatar" style="background-image: url(&quot;https://upload.jianshu.io/users/upload_avatars/15644970/af49fdfc-a58b-4527-a807-ea77b08ed625.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/24/h/24/format/webp&quot;);"></div> <span class="name">公路商店Store</span></a></div><div class="note have-img"><a target="_blank" href="https://www.jianshu.com/p/18bd4121acbd?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="cover" style="background-image: url(&quot;https://upload-images.jianshu.io/upload_images/4872563-a9c15f0f440eeb62?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240/format/webp&quot;);"></a> <a target="_blank" href="https://www.jianshu.com/p/18bd4121acbd?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="title">大多数情侣，都是因为什么分手的？</a> <p class="description">前几天，朋友发过来一则消息：“孔维诗苑分手了，我看他们的视频，在哭。” 我打开微博一看，果不其然，上了热搜。 这对因为环游世界、拍有爱的情侣照而走红的情侣，已经在一起10年了。 十年爱情长跑，最后换来分道扬镳。 评论区很多人都说：“一边看视频一边痛哭，十年了还有什么是不能克服的呢，为什么要分手。” 男生在视频中讲的一句话，或许可以作答：“我一直没有做太多跟她未来的设想。”双方发现彼此再做多少改变，也无法将感情维持下去了，于是选择分手。 在秦桑看来，一段感情的结束最可怕的远远不是分离，而是硬要一个结局。 1 大多数分手，都是因为步伐不一致 这样的例子有很多，就像《亲爱的客栈》中，纪凌尘和阚...</p> <a target="_blank" href="https://www.jianshu.com/u/63e4be2312c0?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" class="author"><div class="avatar" style="background-image: url(&quot;https://upload.jianshu.io/users/upload_avatars/4872563/957b4463-0ddd-4dc2-af11-a5d5c7afb432.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/24/h/24/format/webp&quot;);"></div> <span class="name">极物</span></a></div></div></div></div>
+
+  <!-- 相关文章 -->
+      <!-- 未登录用户 -->
+      <div class="seo-recommended-notes">
+
+            <div class="note ">
+                            <a class="title" target="_blank" href="https://www.jianshu.com/p/0364fd847b14?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">Markdown基本语法</a>
+              <p class="description">#标题1##标题2###3级标题一级标题===一级标题========二级标题---&lt;&amp;©&lt;####段落引用&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,&gt; consectetu...</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/cbf137cbddc2?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/649a34badc53.jpg" alt="48">
+                </div>
+                <span class="name">oking</span>
+</a>            </div>
+
+            <div class="note have-img">
+              <a class="cover" target="_blank" href="https://www.jianshu.com/p/f256ab158958?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <img src="./Markdown基本语法 - 简书_files/8031371-8946d376ac6cc4ff.png" alt="240">
+</a>              <a class="title" target="_blank" href="https://www.jianshu.com/p/f256ab158958?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">Markdown基本语法配合基本使用</a>
+              <p class="description">Markdown是什么？ Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。世界上最流行的博客平台WordPress和大...</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/c5bac8c764c8?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/1999fb7e-ad2c-401f-9e1d-0b30c0cb3ebd.jpg" alt="48">
+                </div>
+                <span class="name">浅蓝色的麻吉</span>
+</a>            </div>
+
+            <div class="note have-img">
+              <a class="cover" target="_blank" href="https://www.jianshu.com/p/de09015f57a6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <img src="./Markdown基本语法 - 简书_files/6073010-508dd04512afe937.jpg" alt="240">
+</a>              <a class="title" target="_blank" href="https://www.jianshu.com/p/de09015f57a6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">MarkDown基本语法</a>
+              <p class="description">欢迎访问我的个人博客(Wisink's Blog) Hexo博客生成器需要通过编译MarkDown格式的文件生成html进行最后的展示，在使用MarkDown编辑器(Typecho)之前你需要先了解一下关于markdown的基本语法，如果你已经掌握了，请无视本文档，如果还没...</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/207e0e7998d8?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/08c0fd73-6937-45d1-af7c-9910e1460a84.jpg" alt="48">
+                </div>
+                <span class="name">Wisink</span>
+</a>            </div>
+
+            <div class="note ">
+                            <a class="title" target="_blank" href="https://www.jianshu.com/p/784df455d290?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">Markdown基本语法</a>
+              <p class="description">一级标题 语法：#一级标题 二级标题： 语法：##二级标题 三级标题： 语法：###三级标题 四级标题： 语法：####四级标题 五级标题： 语法：#####五级标题 六级标题： 语法：######六级标题 分割线： 语法：---- 斜体：语法：*斜体* 粗体：语法：**粗...</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/0039ed781cc6?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/6c00365227ae.jpg" alt="48">
+                </div>
+                <span class="name">李不言被占用了</span>
+</a>            </div>
+
+            <div class="note have-img">
+              <a class="cover" target="_blank" href="https://www.jianshu.com/p/3a78ee854829?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <img src="./Markdown基本语法 - 简书_files/1091288-77b38958624f279e.jpg" alt="240">
+</a>              <a class="title" target="_blank" href="https://www.jianshu.com/p/3a78ee854829?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">早餐要吃好</a>
+              <p class="description">2016-02-02 周二 晴 昨晚跟朋友大谈养生的时候，我一本正经地说：“肠炎道：早餐要吃好，午餐要吃饱，晚餐要吃少。” 作为一个好久没吃过早餐的人，我说出这句话的时候心里是砰砰的。 就像有的家长总嫌孩子成绩不行，其实他自己当年的成绩更是萌萌哒。 已然记不得这是我第几次立...</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/baed316adecc?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/cace677355a6.jpg" alt="48">
+                </div>
+                <span class="name">韩日记</span>
+</a>            </div>
+
+            <div class="note ">
+                            <a class="title" target="_blank" href="https://www.jianshu.com/p/c2bcb4826e5f?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">无标题文章</a>
+              <p class="description">大沙发等发大水发 说法傻傻的费 http://www.qijihao.com/article=39</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/f9e6c9cea464?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/8830ea2c4ccd.jpg" alt="48">
+                </div>
+                <span class="name">Xima</span>
+</a>            </div>
+
+            <div class="note ">
+                            <a class="title" target="_blank" href="https://www.jianshu.com/p/602671b8f39d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">六项精进</a>
+              <p class="description">日精进打卡 姓名 朱均 企业名称 宁波大发化纤公司 组别 上海盛和塾276期反省一组 【日精进打卡第146天】 【知~学习】 诵读《六项精进》遍，累计136遍；诵读《大学》1遍，累计136遍。 【经典名句分享】 【行~实践】 一、修身： 骑车50公里 二、齐家： 1.陪小儿...</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/7fabb9326126?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/291df28b-73a3-46a7-9d6e-faf5b1df7bfd" alt="48">
+                </div>
+                <span class="name">朱均f7c8</span>
+</a>            </div>
+
+            <div class="note ">
+                            <a class="title" target="_blank" href="https://www.jianshu.com/p/eae6364aa551?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">项目管理</a>
+              <p class="description">==</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/5536ece0c06e?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/6-fd30f34c8641f6f32f5494df5d6b8f3c.jpg" alt="48">
+                </div>
+                <span class="name">SteveXu</span>
+</a>            </div>
+
+            <div class="note ">
+                            <a class="title" target="_blank" href="https://www.jianshu.com/p/0a7f4919b6d5?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">错把无常当有常，所以才会不解</a>
+              <p class="description">下午去厕所，遇到学校一位老教师，聊起来我带两个班的事情，他说他有一个建议。听到他这样说时，我有意往他身边挪了挪，生怕没有听清人家的好意。 他说，一个重点班，一个普通班，学生的整体素质是不一样的，但是，同样是一个老师教的，也是一个班主任带的。如果分班的时候把两个班揉碎，掺到一...</p>
+              <a class="author" target="_blank" href="https://www.jianshu.com/u/4eebad8a74bc?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+                <div class="avatar">
+                  <img src="./Markdown基本语法 - 简书_files/72ab285f-3b36-4d96-8b3c-d7b6c19c1c52.jpg" alt="48">
+                </div>
+                <span class="name">雪后山</span>
+</a>            </div>
+      </div>
+</div>
+
+    <script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"mac","read_mode":"day","read_font":"font2","note_show":{"is_author":false,"is_following_author":false,"is_liked_note":false,"follow_state":0,"uuid":"4d61286f-14af-47e6-813e-95266d5508a0"},"note":{"id":22638973,"gupao_eligible":false,"slug":"191d1e21f7ed","user_id":6860761,"notebook_id":21225181,"commentable":true,"likes_count":1881,"views_count":1135791,"public_wordage":1263,"comments_count":187,"featured_comments_count":3,"total_rewards_count":1,"is_author":false,"paid_type":"free","paid":false,"paid_content_accessible":false,"author":{"nickname":"高鸿祥","total_wordage":79142,"followers_count":646,"total_likes_count":2082}}}</script>
+    
+    <script src="./Markdown基本语法 - 简书_files/babel-polyfill-d171e3dec4b6c15634dd.js" crossorigin="anonymous"></script>
+    <script src="./Markdown基本语法 - 简书_files/web-base-4b3b5e8109235e17457f.js" crossorigin="anonymous"></script>
+<script src="./Markdown基本语法 - 简书_files/web-0fc27cc1f343f235137d.js" crossorigin="anonymous"></script>
+    
+    <script src="./Markdown基本语法 - 简书_files/entry-067e29d4dbb9720faaa7.js" crossorigin="anonymous"></script>
+    
+  
+
+<!----><!----><iframe id="blockbyte-bs-sidebar" class="notranslate" data-pos="left" src="./Markdown基本语法 - 简书_files/saved_resource.html"></iframe><div id="blockbyte-bs-indicator" class="blockbyte-bs-fullHeight" style="width: 2px; height: 100%; top: 0%;"></div></body></html>
