@@ -95,4 +95,9 @@ Java是形式自由的语言，不需要遵循任何特殊的缩进书写规范�
 .|句号（点）|用来将软件包的名字与他的子类或类分割。也用来将引用变量与变量或方法分割
 
 #### 2.6.6 Java关键字
+Java一共定义了48个保留关键字。
+![Java保留关键字](https://github.com/lewiscrow/WorkHardAndFindJob/tree/master/java%E5%A4%8D%E4%B9%A0/java2%E5%8F%82%E8%80%83%E5%A4%A7%E5%85%A8/images/保留关键字.png)
+Java还有以下三个保留字：true、false和null。
 
+#### 2.6.7 Java类库
+内置的多看看源码，其他的尽量了解。
