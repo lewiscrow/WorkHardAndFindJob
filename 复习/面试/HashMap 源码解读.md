@@ -128,7 +128,7 @@ transient int modCount；
 // 下一次 resize 的值
 int threshold;
 
-// hash table 的装载因子
+// hashmap 的装载因子
 final float loadFactor;
 ```
 **再下面是 public 的操作**：
