@@ -143,10 +143,10 @@
 		private Singleton(){
 		}
 
-		private enum Singleton{
+		private static enum Singleton{
 			INSTANCE;
 			
-			private final Singleton singleton;
+			private Singleton singleton;
 
 			private Singleton(){
 				instance = new Singleton();
