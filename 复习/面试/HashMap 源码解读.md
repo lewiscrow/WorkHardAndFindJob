@@ -1,7 +1,7 @@
 ## HashMap 源码解读
 在很多面试中，都会涉及到`HashMap`的问题，比如说问你`HashMap`存储结构，`get`、`put`的时间复杂度，或者扩容机制等等，这次我们来通过对源码的阅读，来实现对`HashMap`的理解！
 先看类的继承结构：
-```
+```java
 public class HashMap<K,V> extends AbstractMap<K,V>
     implements Map<K,V>, Cloneable, Serializable {
     	...
@@ -12,7 +12,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 对于这些接口中的方法就不单独解释了，下面一起来看源码就好。
 
 首先是一些**常量属性**：
-```
+```java
 // 默认初始化容量，16。必须是 2 的幂次。
 static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
 
@@ -32,7 +32,7 @@ static final int UNTREEIFY_THRESHOLD = 6;
 static final int MIN_TREEIFY_CAPACITY = 64;
 ```
 然后是一个**静态内部类**`Node<K,V>`：
-```
+```java
 	// 实现了 Entry 接口可用于 AbstractMap 中的方法
 	static class Node<K,V> implements Map.Entry<K,V> {
 		// hash 值
@@ -82,7 +82,7 @@ static final int MIN_TREEIFY_CAPACITY = 64;
     }
 ```
 看完了内部存储键值对的静态内部类，接下来看**静态方法**：
-```
+```java
 	// 查看某个键的 hash 值，在基础的 hashCode() 方法后又对其进行了处理
 	static final int hash(Object key) {
         int h;
@@ -112,7 +112,8 @@ static final int MIN_TREEIFY_CAPACITY = 64;
     }
 ```
 **接下来是一些变量属性**：
-```
+
+```java
 // 表结构是存储的内容
 transient Node<K,V>[] table;
 
@@ -132,7 +133,8 @@ int threshold;
 final float loadFactor;
 ```
 **再下面是 public 的操作**：
-```
+
+```java
 	/** 
 	* 构造函数们
 	*/
@@ -894,7 +896,7 @@ final float loadFactor;
     }
 ```
 下面是实现另外两个**接口中的方法**，即`Cloneable`和`Serializable`的方法：
-```
+```java
 	// clone 函数
     @Override
     public Object clone() {
@@ -931,7 +933,7 @@ final float loadFactor;
         }
 ```
 下面是几个**迭代器类**，用于键啊、值、节点的迭代：
-```
+```java
 	// 抽象类，用于下面被继承
 	abstract class HashIterator {
         Node<K,V> next;        // next entry to return
@@ -1001,7 +1003,8 @@ final float loadFactor;
 ```
 下面是几个 spliterator 类（可拆分迭代器）：
 一个博客介绍了[可拆分迭代器](https://blog.csdn.net/sl1992/article/details/100149187)是啥。
-```
+
+```java
 	// 所有 Spliterator 的父类，这边没什么特别的，关键方法都在 Spliterator 接口中，实现子类可以自己重写
     static class HashMapSpliterator<K,V> {
         final HashMap<K,V> map;
@@ -1264,7 +1267,7 @@ final float loadFactor;
     }
 ```
 下面是针对`LinkedHashMap`需要重写的方法：
-```
+```java
 	// 创建一个非树节点
     Node<K,V> newNode(int hash, K key, V value, Node<K,V> next) {
         return new Node<>(hash, key, value, next);
@@ -1316,7 +1319,8 @@ final float loadFactor;
 ```
 后面是**树形结构的类和方法**:
 emmmmmm......由于红黑树不是很懂，这部分就先不看了
-```
+
+```java
     /**
      * Entry for Tree bins. Extends LinkedHashMap.Entry (which in turn
      * extends Node) so can be used as extension of either regular or
@@ -1910,3 +1914,4 @@ emmmmmm......由于红黑树不是很懂，这部分就先不看了
         }
     }
 ```
+
